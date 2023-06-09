@@ -1,0 +1,2654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSR Marvel Super Heroes RPG Advanced – System</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        body * {
+            box-sizing: border-box;
+        }
+
+        body>header,
+        body>aside,
+        body>main {
+            padding: 1ex 1em;
+        }
+
+        table {
+            width: 100%;
+            max-width: 96vw;
+            table-layout: fixed;
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin: 1ex auto 4ex auto;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        th {
+            padding: 0.25ex 0.15em 0.25ex 0.15em;
+        }
+
+        td {
+            padding: 0.5ex 0.5em 0.5ex 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="top">TSR Marvel Super Heroes RPG Advanced – System</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">MSHRPG Home</a>
+                    <ul>
+                        <li>
+                            <a href="/campaign/index.html">Campaign Information</a>
+                            <ul>
+                                <li>
+                                    <a href="/campaign/characters/index.html">Characters</a>
+                                    <ul>
+                                        <li>
+                                            <a href="/campaign/characters/nightsteel.html">Nightsteel</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/characters/dawnbringer.html">Dawnbringer</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/characters/lovelace.html">LOVELACE</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/characters/ashtaret.html">Ashtaret</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/characters/npc/index.html">NPC Statblocks</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="/campaign/characters/npc/steel_sentinel.html">Steel
+                                                        Sentinels</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/campaign/equipment/index.html">Custom Equipment</a>
+                                    <ul>
+                                        <li>
+                                            <a href="/campaign/equipment/dawnbringers_costume.html">Dawnbringer's
+                                                Costume</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/equipment/guardian_blaster_mk_i.html">Guardian Blaster
+                                                Mk. I</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/equipment/sentinel_battlesuit_mk_i.html">Sentinel
+                                                Battlesuit Mk.
+                                                I</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/equipment/pathfinder_mk_i.html">Pathfinder Mk. I</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/equipment/defender_staff_mk_i.html">Defender Staff Mk.
+                                                I</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/campaign/organizations/index.html">Organizations</a>
+                                    <ul>
+                                        <li>
+                                            <a href="/campaign/organizations/steel_sentinels_incorporated.html">Steel
+                                                Sentinels,
+                                                Incorporated</a>
+                                        </li>
+                                    </ul>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/campaign/locations/index.html">Locations</a>
+                                    <ul>
+                                        <li>
+                                            <a href="/campaign/locations/greymount_manor.html">Greymount Manor</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/locations/steel_sentinels_headquarters.html">Steel
+                                                Sentinel
+                                                Headquarters</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Game System Reference</a>
+                            <ul>
+                                <li><a href="/system/universal_table.html">Universal Table</a></li>
+                                <li><a href="/system/powers.html">Powers</a></li>
+                                <li><a href="/system/talents.html">Talents</a></li>
+                                <li><a href="/system/contacts.html">Contacts</a></li>
+                                <li><a href="/system/equipment.html">Equipment</a></li>
+                                <li><a href="/system/tables.html">Other Tables</a></li>
+                                <li><a href="/system/origins.html">Origins</a></li>
+                                <li><a href="/system/magic.html">Magic</a></li>
+                                <li><a href="/system/supporting_cast.html">Animals, Aliens, Criminals, and Other
+                                        Supporting
+                                        Players</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav>
+            <h2 id="toc">Table of Contents</h2>
+            <ol>
+                <li>
+                    <a href="#abilities">Abilities</a>
+                    <ol>
+                        <li>
+                            <a href="#ranks_and_rank_numbers">Ranks and Rank Numbers</a>
+                        </li>
+                        <li>
+                            <a href="#primary_abilities">Primary Abilities</a>
+                        </li>
+                        <li>
+                            <a href="#secondary_abilities">Secondary Abilities</a>
+                        </li>
+                        <li>
+                            <a href="#special_abilities">Special Abilities</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#feats">FEATs</a>
+                    <ol>
+                        <li>
+                            <a href="#time_scale_the_turn">Time Scale — The Turn</a>
+                            <ul>
+                                <li>
+                                    <a href="#initiative">Initiative</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#the_feat_roll">The FEAT Roll</a>
+                        </li>
+                        <li>
+                            <a href="#types_of_feats">Types of Feats</a>
+                        </li>
+                        <li>
+                            <a href="#making_feats">Making FEATs</a>
+                        </li>
+                        <li>
+                            <a href="#types_of_feats_ii">Types of FEATs II</a>
+                            <ul>
+                                <li>
+                                    <a href="#ability_feats">Ability FEATs</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#lifting_things">Lifting Things</a>
+                                        </li>
+                                        <li>
+                                            <a href="#breaking_things">Breaking Things</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#power_feats">Power FEATs</a>
+                                </li>
+                                <li>
+                                    <a href="#talent_feats">Talent FEATs</a>
+                                </li>
+                                <li>
+                                    <a href="#popularity_feats">Popularity FEATs</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#using_popularity">Using Popularity</a>
+                                        </li>
+                                        <li>
+                                            <a href="#column_shifts_in_popularity_feats">Column Shifts in Popularity
+                                                FEATs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#negative_popularity">Negative Popularity</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#resource_feats">Resource FEATs</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#bank_loans_option">Bank Loans Option</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#combined_and_multiple_feats">Combined and Multiple FEATs</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#combined_actions">Combined Actions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#more_than_one_action_in_the_same_round">More than One Action in
+                                                the Same Round</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#movement">Movement</a>
+                    <ul>
+                        <li>
+                            <a href="#area_movement">Area Movement</a>
+                        </li>
+                        <li>
+                            <a href="#ranged_movement">Ranged Movement</a>
+                        </li>
+                        <li>
+                            <a href="#vertical_movement">Vertical Movement</a>
+                            <ul>
+                                <li>
+                                    <a href="#upward_movement">Upward Movement</a>
+                                </li>
+                                <li>
+                                    <a href="#downward_movement">Downward Movement</a>
+                                </li>
+                                <li>
+                                    <a href="#catching_items_as_falling">Catching Items as Falling</a>
+                                </li>
+                                <li>
+                                    <a href="#catching_people_while_falling">Catching People while Falling</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#flight_and_gliding">Flight and Gliding</a>
+                            <ul>
+                                <li>
+                                    <a href="#deceleration">Deceleration</a>
+                                </li>
+                                <li>
+                                    <a href="#landing">Landing</a>
+                                </li>
+                                <li>
+                                    <a href="#altitude">Altitude</a>
+                                </li>
+                                <li>
+                                    <a href="#diving">Diving</a>
+                                </li>
+                                <li>
+                                    <a href="#obstructions">Obstructions</a>
+                                </li>
+                                <li>
+                                    <a href="#turns">Turns</a>
+                                </li>
+                                <li>
+                                    <a href="#low_altitude_flight">Low Altitude Flight</a>
+                                </li>
+                                <li>
+                                    <a href="#gliding">Gliding</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#swimming_and_water_movement">Swimming and Water Movement</a>
+                        </li>
+                        <li>
+                            <a href="#long_distance_movement">Long Distance Movement</a>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </nav>
+
+        <nav>
+            <h2 id="reference">Reference</h2>
+            <ol>
+                <li><a href="/system/universal_table.html">Universal Table</a></li>
+                <li><a href="/system/powers.html">Powers</a></li>
+                <li><a href="/system/talents.html">Talents</a></li>
+                <li><a href="/system/contacts.html">Contacts</a></li>
+                <li><a href="/system/equipment.html">Equipment</a></li>
+                <li><a href="/system/tables.html">Other Tables</a></li>
+                <li><a href="/system/origins.html">Origins</a></li>
+                <li><a href="/system/magic.html">Magic</a></li>
+                <li><a href="/system/supporting_cast.html">Animals, Aliens, Criminals, and Other Supporting Players</a></li>
+            </ol>
+        </nav>
+        <h2 id="abilities">Abilities</h2>
+        <a href="#top">Back to top</a>
+        <p>
+            Characters in the MARVEL SUPER HEROES game are defined by their abilities. These abilities determine their
+            chances of performing certain actions in the game. There are three types of abilities: primary, secondary,
+            and special. Abilities are usually given a rank and rank number to define their levels of power.
+        </p>
+        <p>
+            The primary abilities are <a href="#ability_fighting">Fighting</a>, <a href="#ability_agility">Agility</a>,
+            <a href="#ability_strength">Strength</a>, <a href="#ability_endurance">Endurance</a>, <a
+                href="#ability_reason">Reason</a>, <a href="#ability_intuition">Intuition</a>, and <a
+                href="#ability_psyche">Psyche</a>. These primary abilities are shared by almost all characters in the
+            Marvel Universe — they are a measuring stick of how well a character can perform certain acts. Primary
+            abilities are also called fixed abilities because while they may be improved over time, they do not normally
+            change from adventure to adventure. All primary abilities have a rank and rank number.
+        </p>
+        <p>
+            Secondary abilities are <a href="#ability_health">Health</a>, <a href="#ability_karma">Karma</a>, <a
+                href="#ability_resources">Resources</a>, and <a href="#ability_popularity">Popularity</a>. These are
+            sometimes called variable abilities, as they may change within the course of a single adventure. All normal
+            individuals and most characters the players encounter have secondary abilities. Secondary abilities may be
+            defined by ranks or separate numbers.
+        </p>
+        <p>
+            Special abilities are skills and abilities that are not common to all characters, and indeed may be unique
+            to a particular character. These include all <a href="#ability_powers">Powers</a>, <a
+                href="#ability_talents">Talents</a>, <a href="/system/equipment.html">Equipment</a>, and <a
+                href="#ability_contacts">Contacts</a>. Special abilities use rank numbers or modify existing rank
+            numbers.
+        </p>
+        <h3 id="ranks_and_rank_numbers">Ranks and Rank Numbers</h3>
+        <a href="#top">Back to top</a>
+        <p>When a rank number is not defined (a weapon inflicts Good damage), use the Standard Rank Number.</p>
+        <table id="table_ranks_and_rank_numbers">
+            <caption>Ranks and Rank Numbers</caption>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Rank Range</th>
+                    <th>Standard Rank Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Shift 0</th>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>Feeble</th>
+                    <td>1-2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>Poor</th>
+                    <td>3-4</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>Typical</th>
+                    <td>5-7</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>Good</th>
+                    <td>8-15</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>Excellent</th>
+                    <td>16-25</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>Remarkable</th>
+                    <td>26-35</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>Incredible</th>
+                    <td>36-45</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>Amazing</th>
+                    <td>46-62</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>Monstrous</th>
+                    <td>63-67</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <th>Unearthly</th>
+                    <td>88-125</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <th>Shift-X</th>
+                    <td>126-175</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <th>Shift-Y</th>
+                    <td>176-350</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <th>Shift-Z</th>
+                    <td>351-UP</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <th>Class 1000</th>
+                    <td>1000</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <th>Class 3000</th>
+                    <td>3000</td>
+                    <td>3000</td>
+                </tr>
+                <tr>
+                    <th>Class 5000</th>
+                    <td>5000</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <th>Beyond</th>
+                    <td></td>
+                    <td>Infinite</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Ranks labeled "Shift" are normally used for actions that are moved by modifiers above or below the Feeble
+            and Unearthly ranks on the <a href="#extended_universal_table">Universal Table</a>. Class 1000, 3000,
+            5000, and Beyond levels are not available to
+            most heroes, but are used to define such powerful universal forces as Eternity and Galactus.
+        </p>
+        <p>
+            The rank range includes all the rank numbers for that range. A character with a Strength of 15 can be said
+            to have Good Strength. The Hero rank numbers above the rank range are for use with existing heroes in the
+            Marvel Universe. Spider-Man, for example, has Remarkable Fighting ability (his initial rank number is 30). A
+            new hero entering the Marvel Universe with Remarkable Fighting ability would have a rank number of 26. This
+            is because established characters in the Marvel Universe can be assumed to have been improving their skills
+            over some time.
+        </p>
+        <h3 id="primary_abilities">Primary Abilities</h3>
+        <a href="#top">Back to top</a>
+        <dl>
+            <dt id="ability_fighting">Fighting</dt>
+            <dd>
+                <ul>
+                    <li>A measure of raw combat ability</li>
+                    <li>Used to determine if the character lands a blow in hand-to-hand (called Slugfest) combat</li>
+                    <li>Used to determine if a character evades a blunt attack</li>
+                    <li>Used to determine if a multiple combat attack or other FEAT involving hand-to-hand combat is
+                        successful</li>
+                    <li>Used to determine the secondary ability known as Health</li>
+                </ul>
+                <table id="table_fighting_ranks">
+                    <caption>Fighting Ranks</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feeble</td>
+                            <td>No training or ability</td>
+                        </tr>
+                        <tr>
+                            <td>Poor</td>
+                            <td>Normal human ability</td>
+                        </tr>
+                        <tr>
+                            <td>Typical</td>
+                            <td>Minimal training or natural ability</td>
+                        </tr>
+                        <tr>
+                            <td>Good</td>
+                            <td>Some formal training</td>
+                        </tr>
+                        <tr>
+                            <td>Excellent</td>
+                            <td>Regular, formal training</td>
+                        </tr>
+                        <tr>
+                            <td>Remarkable</td>
+                            <td>Superior talent</td>
+                        </tr>
+                        <tr>
+                            <td>Incredible</td>
+                            <td>Superior talent with training</td>
+                        </tr>
+                        <tr>
+                            <td>Amazing</td>
+                            <td>Maximum human potential</td>
+                        </tr>
+                        <tr>
+                            <td>Monstrous</td>
+                            <td>Super-human maximum potential</td>
+                        </tr>
+                        <tr>
+                            <td>Unearthly</td>
+                            <td>Super-human with intensive training</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </dd>
+            <dt id="ability_agility">Agility</dt>
+            <dd>
+                <ul>
+                    <li>A measure of dexterity and nimbleness</li>
+                    <li>Used to determine if the character hits with a thrown or aimed weapon at a distance</li>
+                    <li>Used to determine if the character dodges a missile attack</li>
+                    <li>Used to determine if the character catches an object, holds onto a ledge, or successfully
+                        performs actions that require quick action or co-ordination</li>
+                    <li>Used to determine how well a character handles a vehicle</li>
+                    <li>Used to determine the secondary ability known as Health</li>
+                </ul>
+                <table id="table_agility_ranks">
+                    <caption>Agility Ranks</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feeble</td>
+                            <td>Physically limited</td>
+                        </tr>
+                        <tr>
+                            <td>Poor</td>
+                            <td>Clumsy, inaccurate</td>
+                        </tr>
+                        <tr>
+                            <td>Typical</td>
+                            <td>Normal human reactions</td>
+                        </tr>
+                        <tr>
+                            <td>Good</td>
+                            <td>Some training in dexterity and accuracy</td>
+                        </tr>
+                        <tr>
+                            <td>Excellent</td>
+                            <td>Intensive training in dexterity and/or accuracy</td>
+                        </tr>
+                        <tr>
+                            <td>Remarkable</td>
+                            <td>Olympic athlete</td>
+                        </tr>
+                        <tr>
+                            <td>Incredible</td>
+                            <td>Olympic gymnast</td>
+                        </tr>
+                        <tr>
+                            <td>Amazing</td>
+                            <td>Super-human accuracy</td>
+                        </tr>
+                        <tr>
+                            <td>Monstrous</td>
+                            <td>Super-human accuracy and sense of dexterity</td>
+                        </tr>
+                        <tr>
+                            <td>Unearthly</td>
+                            <td>Movement and reactions in a flash, rarely misses</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </dd>
+            <dt id="ability_strength">Strength</dt>
+            <dd>
+                <ul>
+                    <li>A measure of physical muscle power</li>
+                    <li>Used to determine damage inflicted in slugfest combat</li>
+                    <li>Used to determine success and damage in wrestling combat and success in Grabbing, Escaping, and
+                        Blocking maneuvers</li>
+                    <li>Used to determine success in destroying materials</li>
+                    <li>Used to determine if a character can lift a heavy object or perform other acts that require
+                        physical power</li>
+                    <li>Used to determine the secondary ability known as Health</li>
+                </ul>
+                <table id="table_strength_ranks">
+                    <caption>Strength Ranks</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feeble</td>
+                            <td>Able to press up to 50 lbs.</td>
+                        </tr>
+                        <tr>
+                            <td>Poor</td>
+                            <td>Able to press up to 100 lbs.</td>
+                        </tr>
+                        <tr>
+                            <td>Typical</td>
+                            <td>Able to press up to 200 lbs.</td>
+                        </tr>
+                        <tr>
+                            <td>Good</td>
+                            <td>Able to press up to 400 lbs.</td>
+                        </tr>
+                        <tr>
+                            <td>Excellent</td>
+                            <td>Able to press up to 800 lbs. (Maximum human ability)</td>
+                        </tr>
+                        <tr>
+                            <td>Remarkable</td>
+                            <td>Able to press up to 2000 lbs (1 ton)</td>
+                        </tr>
+                        <tr>
+                            <td>Incredible</td>
+                            <td>Able to press up to 10 tons</td>
+                        </tr>
+                        <tr>
+                            <td>Amazing</td>
+                            <td>Able to press up to 50 tons</td>
+                        </tr>
+                        <tr>
+                            <td>Monstrous</td>
+                            <td>Able to press up to 80 tons</td>
+                        </tr>
+                        <tr>
+                            <td>Unearthly</td>
+                            <td>Able to press up to 100+ tons</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </dd>
+            <dt id="ability_endurance">Endurance</dt>
+            <dd>
+                <ul>
+                    <li>A measure of personal toughness and physical resistance</li>
+                    <li>Used to determine normal moving speed</li>
+                    <li>Used to determine success in charging attacks</li>
+                    <li>Used to determine success in avoiding the effects of disease, poison, and gas</li>
+                    <li>Used to determine success in matters that require the character to perform actions over a long
+                        period of time, such as holding one's breath</li>
+                    <li>Used to determine the secondary ability known as Health</li>
+                    <li>Used to resist the effects of Slams, Stuns, and Kill results directed against the hero</li>
+                    <li>Used to determine the amount of Health regained by a wounded individual</li>
+                </ul>
+                <table id="table_endurance_ranks">
+                    <caption>Endurance Ranks</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feeble</td>
+                            <td>Reduced or impaired ability</td>
+                        </tr>
+                        <tr>
+                            <td>Poor</td>
+                            <td>Minimal ability or exercise</td>
+                        </tr>
+                        <tr>
+                            <td>Typical</td>
+                            <td>Occasionally exercise</td>
+                        </tr>
+                        <tr>
+                            <td>Good</td>
+                            <td>Moderate exercise</td>
+                        </tr>
+                        <tr>
+                            <td>Excellent</td>
+                            <td>Regular exercise</td>
+                        </tr>
+                        <tr>
+                            <td>Remarkable</td>
+                            <td>Intensive exercise</td>
+                        </tr>
+                        <tr>
+                            <td>Incredible</td>
+                            <td>Enhanced abilities</td>
+                        </tr>
+                        <tr>
+                            <td>Amazing</td>
+                            <td>Enhanced and trained abilities</td>
+                        </tr>
+                        <tr>
+                            <td>Monstrous</td>
+                            <td>Rarely tires, great fortitude</td>
+                        </tr>
+                        <tr>
+                            <td>Unearthly</td>
+                            <td>Never tires</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </dd>
+            <dt id="ability_reason">Reason</dt>
+            <dd>
+                <ul>
+                    <li>A measure of intelligence and the capacity for logical thought</li>
+                    <li>Used to determine the character's success in building things</li>
+                    <li>Used to determine the character's success in understanding unknown technology and languages</li>
+                    <li>Used to determine the secondary ability known as Karma</li>
+                </ul>
+
+                <table id="table_reason_ranks">
+                    <caption>Reason Ranks</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feeble</td>
+                            <td>Couch potato. Good grasp of native language, simple machines</td>
+                        </tr>
+                        <tr>
+                            <td>Poor</td>
+                            <td>Limited exposure to technology, understands complex machines</td>
+                        </tr>
+                        <tr>
+                            <td>Typical</td>
+                            <td>Operate 1980's technology</td>
+                        </tr>
+                        <tr>
+                            <td>Good</td>
+                            <td>Repair and install 1980's technology, comprehend terran languages</td>
+                        </tr>
+                        <tr>
+                            <td>Excellent</td>
+                            <td>Modify existing 1980's technology</td>
+                        </tr>
+                        <tr>
+                            <td>Remarkable</td>
+                            <td>Understand advanced 1980's technology including computer/circuitry design</td>
+                        </tr>
+                        <tr>
+                            <td>Incredible</td>
+                            <td>Understand non-terran technologies</td>
+                        </tr>
+                        <tr>
+                            <td>Amazing</td>
+                            <td>Create leading-edge technologies, such as stardrive or time travel</td>
+                        </tr>
+                        <tr>
+                            <td>Monstrous</td>
+                            <td>Improve and modify advanced alien technologies</td>
+                        </tr>
+                        <tr>
+                            <td>Unearthly</td>
+                            <td>In effect, IS an alien technology</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </dd>
+            <dt id="ability_intuition">Intuition</dt>
+            <dd>
+                <ul>
+                    <li>A measure of wisdom, wits, common sense, and battle reflexes</li>
+                    <li>Used to discover clues</li>
+                    <li>Used to determine who may act first in combat (Initiative)</li>
+                    <li>Used to detect hidden or potentially dangerous items, as well as in situations where the
+                        character plays a hunch</li>
+                    <li>Used to resist effects of emotion control powers, spells, and abilities</li>
+                    <li>Used to determine the secondary ability known as Karma</li>
+                </ul>
+                <table id="table_intuition_ranks">
+                    <caption>Intuition Ranks</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feeble</td>
+                            <td>Unaware of surroundings, limited or impaired senses</td>
+                        </tr>
+                        <tr>
+                            <td>Poor</td>
+                            <td>A little slow on the uptake TY Normal human levels</td>
+                        </tr>
+                        <tr>
+                            <td>Good</td>
+                            <td>Above average intuition</td>
+                        </tr>
+                        <tr>
+                            <td>Excellent</td>
+                            <td>Fine eye for detail</td>
+                        </tr>
+                        <tr>
+                            <td>Remarkable</td>
+                            <td>Detective skills or background</td>
+                        </tr>
+                        <tr>
+                            <td>Incredible</td>
+                            <td>Strong empathic sense; gut feeling</td>
+                        </tr>
+                        <tr>
+                            <td>Amazing</td>
+                            <td>In tune with all surroundings,strong hunches in regard to subjects</td>
+                        </tr>
+                        <tr>
+                            <td>Monstrous</td>
+                            <td>Senses beyond all normal limitations</td>
+                        </tr>
+                        <tr>
+                            <td>Unearthly</td>
+                            <td>In touch with universe, cannot be blindsided</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </dd>
+            <dt id="ability_psyche">Psyche</dt>
+            <dd>
+                <ul>
+                    <li>A measure of mental strength and willpower</li>
+                    <li>Used to show resistance to mental and will-dominating attacks</li>
+                    <li>Used to determine resistance to magical attacks</li>
+                    <li>Used to determine initial Magical abilities for those characters who wield magic</li>
+                    <li>Used to determine the secondary ability known as Karma </li>
+                </ul>
+            </dd>
+            <table id="table_psyche_ranks">
+                <caption>Psyche Ranks</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Rank</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Feeble</td>
+                        <td>Easily dominated or programmed</td>
+                    </tr>
+                    <tr>
+                        <td>Poor</td>
+                        <td>Young, untrained, or hampered in sense of will</td>
+                    </tr>
+                    <tr>
+                        <td>Typical</td>
+                        <td>Normal human willpower</td>
+                    </tr>
+                    <tr>
+                        <td>Good</td>
+                        <td>Resist ordinary mesmerism</td>
+                    </tr>
+                    <tr>
+                        <td>Excellent</td>
+                        <td>Some experience with mental control and/or mystic forces</td>
+                    </tr>
+                    <tr>
+                        <td>Remarkable</td>
+                        <td>Trained in resisting outside will-dominating forces</td>
+                    </tr>
+                    <tr>
+                        <td>Incredible</td>
+                        <td>Highly trained, or possessing great strength of will</td>
+                    </tr>
+                    <tr>
+                        <td>Amazing</td>
+                        <td>Indomitable willpower</td>
+                    </tr>
+                    <tr>
+                        <td>Monstrous</td>
+                        <td>Intense training in mental powers, experience in wielding those powers</td>
+                    </tr>
+                    <tr>
+                        <td>Unearthly</td>
+                        <td>A closed mind, practically uncontrollable by outside means</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dl>
+        <h3 id="secondary_abilities">Secondary Abilities</h3>
+        <a href="#top">Back to top</a>
+        <dl>
+            <dt id="ability_health">Health</dt>
+            <dd>
+                <ul>
+                    <li>Used to determine the amount of physical damage the character can absorb before losing
+                        consciousness and potentially dying</li>
+                    <li>Does not have a rank or rank number, but rather is the sum of the rank numbers of the
+                        character's Fighting, Agility, Strength, and Endurance</li>
+                    <li>Lost through combat, accidents, attacks, and other potentially dangerous and life-threatening
+                        situations</li>
+                    <li>Recovered after damage is taken, 10 turns after damage is inflicted</li>
+                    <li>Regained through normal healing by the Endurance rank number of points per day (in crisis
+                        situations, Health may be figured as regained by the hour or turn. See the table under Healing)
+                    </li>
+                    <li>If reduced to 0, the character is unconscious and may begin to lose Endurance ranks. (See Life,
+                        Death, and Health)</li>
+                </ul>
+            </dd>
+            <dt id="ability_karma">Karma</dt>
+            <dd>
+                <ul>
+                    <li>Used by the hero as a measure of experience, allowing the hero to perform actions that may
+                        otherwise be impossible</li>
+                    <li>Does not have a rank or rank number. Starting Karma is determined when the character is created
+                        by the sum of the Initial rank numbers of the character's Reason, Intuition, and Psyche</li>
+                    <li>Gained through performing heroic and basically "honorable" acts</li>
+                    <li>Lost through performing selfish, harmful, or "dishonorable" acts</li>
+                    <li>May be spent by the player-character to perform actions otherwise impossible or unlikely. These
+                        include modifying die rolls, staying alive, building things, using magical abilities, and
+                        raising the hero's ability rank numbers and ranks through advancement</li>
+                </ul>
+            </dd>
+            <dt id="ability_resources">Resources</dt>
+            <dd>
+                <ul>
+                    <li>A measure of how wealthy a character is, and how the character may use that wealth</li>
+                    <li>Generated when the character is created</li>
+                    <li>Presented as a rank with a rank number (replacing the Resource Points of the MARVEL SUPER HEROES
+                        Original Set)</li>
+                    <li>Used to determine if a character can afford a particular item or service</li>
+                    <li>See under Resource FEATs in the next chapter for full effects of Resources</li>
+                </ul>
+                <table id="table_resources_ranks">
+                    <caption>Resource Ranks</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feeble</td>
+                            <td>Reduced circumstances, unemployed, on Social Security or allowance</td>
+                        </tr>
+                        <tr>
+                            <td>Poor</td>
+                            <td>Freelance, poor credit risk</td>
+                        </tr>
+                        <tr>
+                            <td>Typical</td>
+                            <td>Lower middle class, students, salaried employment, middle class</td>
+                        </tr>
+                        <tr>
+                            <td>Good</td>
+                            <td>Professional employment, middle class</td>
+                        </tr>
+                        <tr>
+                            <td>Excellent</td>
+                            <td>Small inheritance, small business, upper middle class, Avenger's stipend</td>
+                        </tr>
+                        <tr>
+                            <td>Remarkable</td>
+                            <td>Large business or chain of businesses, established trust fund, upper class</td>
+                        </tr>
+                        <tr>
+                            <td>Incredible</td>
+                            <td>Standard corporation, millionaire</td>
+                        </tr>
+                        <tr>
+                            <td>Amazing</td>
+                            <td>Large corporation, small country</td>
+                        </tr>
+                        <tr>
+                            <td>Monstrous</td>
+                            <td>Multi-national corporation, government branch or military of major country, billionaire
+                                playboy</td>
+                        </tr>
+                        <tr>
+                            <td>Unearthly</td>
+                            <td>Major country, mega-corporation</td>
+                        </tr>
+                        <tr>
+                            <td>CL1000+</td>
+                            <td>Extra-dimensional realm, galactic empire or entity</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </dd>
+            <dt id="ability_popularity">Popularity</dt>
+            <dd>
+                <ul>
+                    <li>A measure of the character's reputation in that character's normal environment</li>
+                    <li>Generated when the character is created</li>
+                    <li>Represented as a rank and rank number. Heroes generally have positive Popularity. Villains
+                        generally have negative Popularity</li>
+                    <li>Used to determine reactions of large groups of people and neutral NPCs</li>
+                    <li>Used to gain favors, information, and equipment from Contacts</li>
+                </ul>
+            </dd>
+        </dl>
+        <h3 id="special_abilities">Special Abilities</h3>
+        <a href="#top">Back to top</a>
+        <dl>
+            <dt id="ability_powers">Powers</dt>
+            <dd>
+                <ul>
+                    <li>Super-human abilities possessed by individual heroes and villains in the Marvel Universe</li>
+                    <li>Used to perform actions above and beyond the limits of normal mortals</li>
+                    <li>Each Power is individual. Powers may have a rank number, or modify an existing primary or
+                        secondary ability rank</li>
+                    <li>May be improved through expenditure of Karma. New Powers may be added at a risk to the player
+                        character</li>
+                    <li>Full list of powers found in Appendix A</li>
+                </ul>
+            </dd>
+            <dt id="ability_talents">Talents</dt>
+            <dd>
+                <ul>
+                    <li>Non-super-human abilities that may be possessed by characters in the Marvel Universe</li>
+                    <li>Used to perform specialized actions at a specific benefit</li>
+                    <li>Are individual; modify an existing primary or secondary ability rank, or provide special
+                        abilities</li>
+                    <li>May be learned as a hero gains experience</li>
+                    <li>Full list of Talents found in Appendix B</li>
+                </ul>
+            </dd>
+            <dt id="ability_contacts">Contacts</dt>
+            <dd>
+                <ul>
+                    <li>Represent social, political, and personal friends and allies through whom the character may gain
+                        information and equipment</li>
+                    <li>Have no rank number. Contacts are considered as Friendly to the character for purposes of
+                        determining reactions</li>
+                    <li>May be increased through spending of Karma, or performing missions for that Contact</li>
+                    <li>Standard Contacts are described in full in Appendix C</li>
+                </ul>
+            </dd>
+        </dl>
+        <h2 id="feats">FEATs</h2>
+        <a href="#top">Back to top</a>
+        <p>
+            At this point you have your Marvel Super Hero, either from those provided or one of your own creation. Now
+            let's talk about how the character is used in the game.
+        </p>
+        <p>
+            In the role-playing situation, you are cast as your hero. You, the player, are a puppeteer, controlling the
+            actions and reactions of your character. Your character is limited in what he or she can do as a result of
+            the character's abilities. Any time you check against these abilities to see if you complete an action, you
+            are making a FEAT roll.
+        </p>
+        <h3 id="time_scale_the_turn">Time Scale — The Turn</h3>
+        <a href="#top">Back to top</a>
+        <p>
+            The MARVEL SUPER HEROES game is played in turns, also called rounds. Each turn is six seconds of "real" time
+            (about the amount of time that takes place in a panel of a comic story). There are therefore ten turns to a
+            minute, and 600 turns to an hour.
+        </p>
+        <p>
+            Turns are only important when time is a crucial factor, such as situations where the hero must find a bomb
+            before it explodes, chase down a suspect, or battle with an opponent. Most of the time, the Judge will not
+            have the players run through periods of waiting. If the heroes decide to wait ten minutes for a bus, the
+            Judge does not run through all 100 6-second turns of that wait (unless, of course, a villain pounces upon
+            the heroes as they wait, at which point time is suddenly crucial).
+        </p>
+        <p>A turn proceeds in the following fashion:</p>
+        <ol>
+            <li>The Judge determines what is happening in the world around the heroes, involving those characters and
+                actions not controlled by the players. He notes these to himself, or, if he wishes, writes them down
+                (writing things down is generally time-consuming, but helps in key situations).</li>
+            <li>The players in turn determine what their heroes are doing. Player's may perform more than one action
+                during a turn, but this may limit the success of other actions. The players tell the judge what their
+                characters are doing.</li>
+            <li>Roll Initiative. Initiative is only important when one action may change or override another action. The
+                side with the highest initiative has its actions take place first. Initiative is usually used in combat
+                and other damage-inducing situations.</li>
+            <li>Pre-Action rolls are made. In certain situations, such as defensive actions (dodging, blocking, and
+                evading), a FEAT roll may be made before anyone on either sides takes any actions. These are Pre-Action
+                FEATS and are rolled at this time. Certain moderator planned actions (such as explosions) may occur at
+                this time. See Changing Actions, below.</li>
+            <li>The actions of the side with initiative take place. Run either the Judge's or the Player's actions,
+                depending on which side got the high initiative.</li>
+            <li>The actions of the side that got the lower roll take place. Run the remaining side's actions.</li>
+        </ol>
+        <h4 id="initiative">Initiative</h4>
+        <a href="#top">Back to top</a>
+        After each side has decided its intended actions for a turn, each side rolls for initiative. The side with the
+        higher roll is considered to have "won" initiative, and gets to move first (similar to winning the toss before a
+        football game). All of one side's actions take place before the other sides. At the start of the next round,
+        roll for initiative again, provided there are still at least two combatants whose actions will interfere with
+        each other.
+        <dl>
+            <dt>Initiative Modifier</dt>
+            <dd>Each side adds to its initiative mil a modifier based upon the highest Intuition on that side. This may
+                allow a side with a low roll to gain initiative. A roll of "1" is always considered to be a "1." The
+                initiative modifier is based on the character's rank number:</dd>
+            <dt>Changing Actions</dt>
+            <dd>After making an initiative roll, an action that sounded so good a moment ago sounds like not such a
+                great idea afterwards. <i>Example:</i> Both you and an opponent dive for a gun kicked across the floor.
+                You
+                roll a 1 for initiative. It may be time to re-examine your options. Changing an action requires a yellow
+                Agility FEAT, and any FEATs made after changing are at a penalty of one column shift to the left(-1CS).
+                The roll for changing actions takes place in the pre-action phase of the turn.</dd>
+            <dt>Negating Actions</dt>
+            <dd>Losing the initiative may negate certain actions. These are lost and may not be performed during that
+                turn. For example, if you are knocked out before you can land a blow, you do not get a chance to take
+                your action.</dd>
+        </dl>
+        <table id="table_initiative">
+            <caption>Initiative</caption>
+            <thead>
+                <tr>
+                    <th>Intuition Rank Number</th>
+                    <th>Initiative Modifier</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0 to 10</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>11 to 20</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>21 to 30</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>31 to 40</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>41 to 50</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>51 to 75</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>75 and up</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="the_feat_roll">The FEAT Roll</h3>
+        <a href="#top">Back to top</a>
+        <p>
+            The success of any action is determined by a FEAT roll. Quickly summarizing, you make a FEAT roll in the
+            following fashion:
+        </p>
+        <ol>
+            <li>Determine the Ability, Power, or Talent you are checking.</li>
+            <li>Find out the rank of that Ability, Power, or Talent.</li>
+            <li>Roll percentile dice.</li>
+            <li><a href="/system/universal_table.html">Cross-reference the number you roll against the Ability's rank. This
+                    gives a red, yellow, green, or
+                    white result.</a></li>
+            <li>Usually (but not always), a colored result means the action was a success, with the color determining
+                the degree of success. A white result is usually (but not always) a failure in the attempt.</li>
+        </ol>
+        <h4 id="types_of_feats">Types of FEATs</h4>
+        <a href="#top">Back to top</a>
+        <p>
+            The following are the different types of FEATs called for in the course of the game.
+        </p>
+        <ol>
+            <li>Ability FEATs are those that rely on one of the seven primary abilities (Fighting, Agility. Strength.
+                Endurance, Reason, Intuition, and Psyche). These FEATs may be raised or lowered by Talents or the
+                existing situation.</li>
+            <li>Power FEATs are those that rely on one the hero's individual Powers: a character with Water Control of
+                Amazing checks on the Amazing column to determine success.</li>
+            <li>Talent FEATs are those that rely on the hero's Talents, where the Talent modifies a specific ability for
+                FEATs.</li>
+            <li>Popularity FEATs are those used in social interaction, and use the Popularity rank, and may be modified
+                by Contacts.</li>
+            <li>Resource FEATs are used in connection with the character's Resource rank, and determine if the character
+                can afford a specific item or piece of equipment. Think of this as a "Credit Check," for now — we'll
+                explain it further below.</li>
+        </ol>
+        <h3 id="making_feats">Making FEATs</h3>
+        <a href="#top">Back to top</a>
+        <p>
+            Intensity determines whether certain FEATs are feasible or not, and the type of result needed for the FEAT
+            to succeed.
+        </p>
+        <p>
+            If a FEAT does not have a given, stated intensity, assume that any color result means success. Combat FEATS
+            have varying degrees of success, and as such are discussed in full in the combat section.
+        </p>
+        <p>
+            An Intensity is set as a rank (Unearthly, Monstrous, etc.). Compare the requisite ability against the
+            intensity to determine the color of the FEAT required for success. If the Intensify rank is greater than the
+            Ability rank, only a red result will be successful. If the two are equal, a yellow result is needed for
+            success. If the Ability rank is greater than the Intensity rank, then a green FEAT is needed. Option: if
+            unstated, the Judge may declare the Intensity to be Typical.
+        </p>
+        <p>
+            A summary of FEAT Intensities is provided in the Judge's Book. There are items with variable Intensity
+            levels, such as poisons and gases. That information and the effects of these items are covered under their
+            own areas in the Judge's Book.
+        </p>
+        <dl>
+            <dt>Automatic FEATs</dt>
+            <dd>Certain actions can be assumed to be automatically successful. Picking up a normal chair is a simple
+                act. and would not require a FEAT roll to determine its success. (Picking up a chair while dodging
+                bullets and defusing a bomb simultaneously will require a FEAT roll. More on multiple actions later.) In
+                general, if an item is more than three ranks lower in Intensity than the requisite Ability. the FEAT can
+                be considered automatic, with the Judge's permission. The sole purpose for Automatic FEATs is to prevent
+                the game from being dominated by die rolls. The Judge always has the power to ask for FEAT rolls. In
+                some cases. items like Poisons may require FEATs regardless of the Intensity</dd>
+            <dt>Impossible FEATs</dt>
+            <dd>As a guideline, any action more than one rank above the ability may be considered impossible. The
+                Resource FEAT is always limited in this fashion (check it out).</dd>
+            <dt>Shifting the Rank</dt>
+            <dd>
+                <p>Certain situations may result in the shifting of a column to the right or left. A shift to the right
+                    is considered a positive shift (+1, +2, or +3CS, or column shift). A shift to the left, making the
+                    FEAT more difficult, is considered a negative shift (-1, -2, or -3CS). Column Shifts are primarily
+                    involved as per specific situations (trying to lift an object on a slippery incline may result in a
+                    shift of -1 or -2CS). Those involved in combat are discussed in the combat section.</p>
+                <p>Shifting of ranks may make certain FEATs automatic (or impossible). No FEAT may be shifted to the
+                    left below Shift 0 or to the right above Shift-Z. Anything in the Class 1000. Class 3000, Class 5000
+                    or Beyond columns may not be shifted, except in specific circumstances listed for that FEAT.</p>
+            </dd>
+        </dl>
+        <h4 id="intensity_tables">Intensity Tables</h4>
+        <table id="table_fighting_feats">
+            <caption>Fighting FEATs</caption>
+            <tbody>
+                <tr>
+                    <th>Making 2 attacks/round</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Making 2 attacks/round</th>
+                    <td>Amazing intensity</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="table_agility_feats">
+            <caption>Agility FEATs</caption>
+            <tbody>
+                <tr>
+                    <th>Catching a falling object</th>
+                    <td>Feeble intensity</td>
+                </tr>
+                <tr>
+                    <th>Walking a balance beam</th>
+                    <td>Good intensity</td>
+                </tr>
+                <tr>
+                    <th>Using a dodge manuever against bullets</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Catching thrown objects</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Walking a tightrope</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Attempting to dodge bursts of bullets</th>
+                    <td>Incredible intensity</td>
+                </tr>
+                <tr>
+                    <th>Catching arrows in flight</th>
+                    <td>Amazing intensity</td>
+                </tr>
+                <tr>
+                    <th>Dodging laser fire of energy weapons</th>
+                    <td>Monstrous intensity</td>
+                </tr>
+                <tr>
+                    <th>Catching bullets in flight</th>
+                    <td>Unearthly intensity</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="table_strength_feats">
+            <caption>Strength FEATs</caption>
+            <tbody>
+                <tr>
+                    <th>Lifting up to 50 lbs.</th>
+                    <td>Feeble intensity</td>
+                </tr>
+                <tr>
+                    <th>Lifting 51-100 lbs.</th>
+                    <td>Poor intensity</td>
+                </tr>
+                <tr>
+                    <th>Lifting 101-200 lbs.</th>
+                    <td>Typical intensity</td>
+                </tr>
+                <tr>
+                    <th>Lifting 201-400 lbs.</th>
+                    <td>Good intensity</td>
+                </tr>
+                <tr>
+                    <th>Lifting 401-800 lbs.</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Lifting 801-2000 lbs. (1 ton)</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Lifting 1-10 tons</th>
+                    <td>Incredible intensity</td>
+                </tr>
+                <tr>
+                    <th>Lifting 10-50 tons</th>
+                    <td>Amazing intensity</td>
+                </tr>
+                <tr>
+                    <th>Lifting 50-80 tons</th>
+                    <td>Monstrous intensity</td>
+                </tr>
+                <tr>
+                    <th>Lifting 80-100 tons</th>
+                    <td>Unearthly intensity</td>
+                </tr>
+                <tr>
+                    <th>Lifting 100+ tons</th>
+                    <td>Shift-X intensity</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="table_endurance_feats">
+            <caption>Endurance FEATs</caption>
+            <tbody>
+                <tr>
+                    <th>Air pollution alert</th>
+                    <td>Feeble intensity</td>
+                </tr>
+                <tr>
+                    <th>Tear gas</th>
+                    <td>Typical intensity</td>
+                </tr>
+                <tr>
+                    <th>Snake venom</th>
+                    <td>Good intensity</td>
+                </tr>
+                <tr>
+                    <th>Spider venom</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Exposure to vacuum</th>
+                    <td>Unearthly intensity</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="table_reason_feats">
+            <caption>Reason FEATs</caption>
+            <tbody>
+                <tr>
+                    <th>Simple machines</th>
+                    <td>Feeble intensity</td>
+                </tr>
+                <tr>
+                    <th>Complex machines</th>
+                    <td>Poor intensity</td>
+                </tr>
+                <tr>
+                    <th>Communication by gestures</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Appliances</th>
+                    <td>Typical intensity</td>
+                </tr>
+                <tr>
+                    <th>Simple Electronics</th>
+                    <td>Good intensity</td>
+                </tr>
+                <tr>
+                    <th>Common Vehicles</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Computer design and programming</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Ability-modifying devices</th>
+                    <td>Incredible intensity</td>
+                </tr>
+                <tr>
+                    <th>Stardrive, Time Travel</th>
+                    <td>Amazing intensity</td>
+                </tr>
+                <tr>
+                    <th>Teleportation</th>
+                    <td>Monstrous intensity</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="table_intuition_feats">
+            <caption>Intuition FEATs</caption>
+            <tbody>
+                <tr>
+                    <th>Obvious items (number of people present, condition of room)</th>
+                    <td>Poor intensity</td>
+                </tr>
+                <tr>
+                    <th>Detail work (position of objects, things missing or added)</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Discovering “typical” hidden door or secret passage</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Sense "wrongness" about an area, person, or object</th>
+                    <td>Incredible intensity</td>
+                </tr>
+                <tr>
+                    <th>Sense presence of others that may be hidden, concealed, invisible, or astral</th>
+                    <td>Monstrous intensity</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="table_psyche_feats">
+            <caption>Psyche FEATs</caption>
+            <tbody>
+                <tr>
+                    <th>Intensity of standard hypnosis and mesmerism</th>
+                    <td>Good intensity</td>
+                </tr>
+                <tr>
+                    <th>Intensity of standard mind control devices</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Intensity of standard terran magic</th>
+                    <td>Incredible intensity</td>
+                </tr>
+                <tr>
+                    <th>Intensity of standard Asgardian magic</th>
+                    <td>Monstrous Intensity</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="table_other intensities">
+            <caption>Other Intensities</caption>
+            <tbody>
+                <tr>
+                    <th>A single match</th>
+                    <td>Feeble intensity</td>
+                </tr>
+                <tr>
+                    <th>Campfire</th>
+                    <td>Poor intensity</td>
+                </tr>
+                <tr>
+                    <th>Burning room</th>
+                    <td>Typical intensity</td>
+                </tr>
+                <tr>
+                    <th>Burning house</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Burning warehouse and supplies</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Burning non-explosive chemicals</th>
+                    <td>Incredible intensity</td>
+                </tr>
+                <tr>
+                    <th>Inside of a blast furnace</th>
+                    <td>Amazing intensity</td>
+                </tr>
+                <tr>
+                    <th>Burning explosive chemicals</th>
+                    <td>Monstrous intensity</td>
+                </tr>
+                <tr>
+                    <th>Interor of a volcano</th>
+                    <td>Unearthly intensity</td>
+                </tr>
+                <tr>
+                    <th>Surface of a star</th>
+                    <td>Class 1000 intensity</td>
+                </tr>
+                <tr>
+                    <th>Common Cold</th>
+                    <td>Feeble intensity</td>
+                </tr>
+                <tr>
+                    <th>Common Flu</th>
+                    <td>Good intensity</td>
+                </tr>
+                <tr>
+                    <th>Radiation, Ancient A-bomb blast</th>
+                    <td>Feeble intensity</td>
+                </tr>
+                <tr>
+                    <th>Radiation, Recent A-bomb blast</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Interior of an active nuclear reactor</th>
+                    <td>Amazing intensity</td>
+                </tr>
+                <tr>
+                    <th>Radiation of a vial of plutonium</th>
+                    <td>Incredible intensity</td>
+                </tr>
+                <tr>
+                    <th>Radiation of A-bomb blast</th>
+                    <td>Monstrous intensity</td>
+                </tr>
+                <tr>
+                    <th>Slickness of ordinary concrete</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Slickness of ordinary brickwork</th>
+                    <td>Feeble intensity</td>
+                </tr>
+                <tr>
+                    <th>Slickness of glass and steel</th>
+                    <td>Typical intensity</td>
+                </tr>
+                <tr>
+                    <th>Slickness of polished steel alloys</th>
+                    <td>Good intensity</td>
+                </tr>
+                <tr>
+                    <th>Slickness of surface covered with ice</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Slickness of surface covered with oil</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Slickness of non-stick surfaces</th>
+                    <td>Incredible intensity</td>
+                </tr>
+                <tr>
+                    <th>Slickness of frictionless surfaces</th>
+                    <td>Class 1000 intensity</td>
+                </tr>
+                <tr>
+                    <th>Darkness under night conditions</th>
+                    <td>Typical Intensity</td>
+                </tr>
+                <tr>
+                    <th>Darkness under dark conditions</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Darkness under “typical” Darkforce</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Vision through normal fog</th>
+                    <td>Typical intensity</td>
+                </tr>
+                <tr>
+                    <th>Effects of normal rainshower</th>
+                    <td>Good Intensity</td>
+                </tr>
+                <tr>
+                    <th>Effects of normal thundershower</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Effects of normal thunderstorm</th>
+                    <td>Incredible intensity</td>
+                </tr>
+                <tr>
+                    <th>Effects of high winds</th>
+                    <td>Incredible intensity</td>
+                </tr>
+                <tr>
+                    <th>Effects of normal tornado</th>
+                    <td>Amazing intensity</td>
+                </tr>
+                <tr>
+                    <th>Effects of normal hurricane</th>
+                    <td>Unearthly intensity</td>
+                </tr>
+                <tr>
+                    <th>Heat, 90 degrees F</th>
+                    <td>Good intensity</td>
+                </tr>
+                <tr>
+                    <th>Heat, 120 degrees F</th>
+                    <td>Excellent Intensity</td>
+                </tr>
+                <tr>
+                    <th>Heat, 150 degrees F</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Cold, 30 degrees F</th>
+                    <td>Good intensity</td>
+                </tr>
+                <tr>
+                    <th>Cold, 0 degrees F</th>
+                    <td>Excellent Intensity</td>
+                </tr>
+                <tr>
+                    <th>Cold, -30 degrees F</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Cold, interplanetary space</th>
+                    <td>Monstrous intensity</td>
+                </tr>
+                <tr>
+                    <th>Corrosive, mild acid</th>
+                    <td>Good intensity</td>
+                </tr>
+                <tr>
+                    <th>Corrosive, standard acid</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Corrosive, concentrated acid</th>
+                    <td>Incredible+ intensity</td>
+                </tr>
+                <tr>
+                    <th>Stunning, ordinary house current</th>
+                    <td>Excellent intensity</td>
+                </tr>
+                <tr>
+                    <th>Stunning, “typical” protection devices</th>
+                    <td>Remarkable intensity</td>
+                </tr>
+                <tr>
+                    <th>Stunning, Lightning bolts</th>
+                    <td>Incredible intensity</td>
+                </tr>
+                <tr>
+                    <th>Stunning, High tension wires</th>
+                    <td>Amazing intensity</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="types_of_feats_ii">Types of FEATs II</h3>
+        <a href="#top">Back to top</a>
+        <p>
+
+            Now that we've looked at the mechanics of making FEATs, let's look at the specific types we talked about
+            briefly above: Ability FEATs, Power FEATs, Talent FEATs, Popularity FEATs and Resource FEATs.
+        </p>
+        <h4 id="ability_feats">Ability FEATs</h4>
+        <a href="#top">Back to top</a>
+        <p>
+            Ability FEATs are those that come directly from the seven basic abilities: Fighting, Agility, Strength.
+            Endurance, Reason, Intuition, and Psyche. When making an Ability FEAT, the specific ability is normally
+            noted in the text (such as a Psyche FEAT in regards to Mind Control). Often a specific color FEAT is
+            required, such as a yellow Endurance FEAT. The particular FEATs that apply to specific abilities are
+            noted in the Abilities section in the last chapter. Two types of Ability FEATs should be discussed in
+            detail at this time, both of which revolve around the Strength ability. The first is the problem of
+            lifting things, the second breaking through other items.
+        </p>
+        <h5 id="lifting_things">Lifting Things</h5>
+        <a href="#top">Back to top</a>
+        <p>
+            The Strength ability, combined with the Intensity of an object's weight, determines how much the
+            character can lift. As noted above, lifting a weight more than three ranks below the character's
+            Strength can be considered automatic, those one rank below the character's Strength require a
+            green FEAT; those of equal Intensity to the character's Strength require a yellow FEAT; those on
+            one rank higher require a red FEAT; and those beyond one rank higher are impossible.
+        </p>
+        <table id="table_weight_intensity">
+            <caption>Weight Intensity</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Intensity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Feeble</th>
+                    <td>Up to 50 pounds</td>
+                </tr>
+                <tr>
+                    <th scope="row">Poor</th>
+                    <td>Up to 100 pounds</td>
+                </tr>
+                <tr>
+                    <th scope="row">Typical</th>
+                    <td>Up to 200 pounds</td>
+                </tr>
+                <tr>
+                    <th scope="row">Good</th>
+                    <td>Up to 400 pounds</td>
+                </tr>
+                <tr>
+                    <th scope="row">Excellent</th>
+                    <td>Up to 800 pounds</td>
+                </tr>
+                <tr>
+                    <th scope="row">Remarkable</th>
+                    <td>Up to 2000 pounds (1 ton)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Incredible</th>
+                    <td>Up to 10 tons</td>
+                </tr>
+                <tr>
+                    <th scope="row">Amazing</th>
+                    <td>Up to 50 tons</td>
+                </tr>
+                <tr>
+                    <th scope="row">Monstrous</th>
+                    <td>Up to 80 tons</td>
+                </tr>
+                <tr>
+                    <th scope="row">Unearthly</th>
+                    <td>Up to 100 tons</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-X</th>
+                    <td>Up to 250 tons</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-Y</th>
+                    <td>Up to 500 tons</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-Z</th>
+                    <td>Up to 1000 tons</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <i>Example:</i> Spider-Man's Strength is set at Incredible (40). (The Amazing Spider-Man refers to his
+            Agility.) He could lift something of up to 400 pounds without effort under ordinary
+            circumstances (them may be circumstances which would require a FEAT roll). From 400 to about 1
+            ton is a green FEAT roll. From 1 ton up to 10 tons requires a yellow FEAT roil. Over 10 tons
+            (but no more than 50 tons) would require a red FEAT roll, and likely require spending of Karma.
+        </p>
+        <h5 id="breaking_things">Breaking Things</h5>
+        <p>
+            Most inanimate objects have a "damage-resistance" intensity, called material strength of an object.
+        </p>
+        <p>
+            To break through, rip up, or generally damage a material, a character must make a Strength FEAT against
+            that material strength. Success indicates a two-foot-wide hole, maximum, carved in the side. The
+            material strength of the material determines the result needed for a successful FEAT (green, yellow, or
+            red).
+        </p>
+        <p>
+            The listed values are for materials between two inches and 12 inches thick. If the material is less than
+            2" thick, lower the material strength by one rank. If the material is between 1 and 2 feet thick, raise
+            the material strength by one rank. If the material strength is over 2 feet thick, raise the material
+            strength by 2 ranks for purposes of determining damage.
+        </p>
+        <table id="table_material_strength">
+            <caption>Material Strength Table</caption>
+            <thead>
+                <tr>
+                    <th>Material Strength Rank</th>
+                    <th>Materials</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Feeble</th>
+                    <td>Cloth, glass, brush, paper</td>
+                </tr>
+                <tr>
+                    <th scope="row">Poor</th>
+                    <td>Normal plastics, crystal, wood</td>
+                </tr>
+                <tr>
+                    <th scope="row">Typical</th>
+                    <td>Rubber, soft metals (gold, brass, copper), ice, adobe, computer chips</td>
+                </tr>
+                <tr>
+                    <th scope="row">Good</th>
+                    <td>Brick, aluminum, light machinery pieces, asphalt, high strength plastics</td>
+                </tr>
+                <tr>
+                    <th scope="row">Excellent</th>
+                    <td>Concrete, Beta cloth, iron, bullet-proof glass</td>
+                </tr>
+                <tr>
+                    <th scope="row">Remarkable</th>
+                    <td>Reinforced concrete, steel</td>
+                </tr>
+                <tr>
+                    <th scope="row">Incredible</th>
+                    <td>Solid stone, Vibranium, volcanic rock</td>
+                </tr>
+                <tr>
+                    <th scope="row">Amazing</th>
+                    <td>Osmium steel, granite, gemstones</td>
+                </tr>
+                <tr>
+                    <th scope="row">Monstrous</th>
+                    <td>Diamond, super-heavy alloys</td>
+                </tr>
+                <tr>
+                    <th scope="row">Unearthly</th>
+                    <td>Adamantium steel, certain mystical and enchanted elements</td>
+                </tr>
+                <tr>
+                    <th scope="row">Class 1000-5000</th>
+                    <td>Materials of these material strength ranks are virtually indestructible, such as Cap's
+                        shield or
+                        Thor's hammer</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <i>Example:</i> Ice is listed as Typical material. One inch of ice is a Poor material. Two feet of ice
+            is a
+            Good material. Three feet or more is an Excellent material.
+        </p>
+        <p>
+            Note that this is an indication of resistance against damage from blows, not against other types of
+            damage.
+        </p>
+        <h4 id="power_feats">Power FEATs</h4>
+        <a href="#top">Back to top</a>
+        <p>Power FEATs are similar to Ability FEATs, save that the player uses the Power instead of the Ability to
+            pull off the FEAT: Powers and their uses are listed in the back of the book.</p>
+        <p>For example, Wall-Crawling is a Power, whether by molecular charge suppression (Spider-Man), suction cups
+            (the late Fly), or microscopic molecular hooks (Nightcrawler), and has a Power rank. The Wall-Crawling
+            Power rank is used to determine FEATs when using that Power (sticking to a oilsoaked steel wall, for
+            example).</p>
+        <p>Most powers have a range. Some are stated as "touch" or only operating over a given distance. Those that
+            are not specifically stated as having a particular range use the Power Rank to determine their range
+            from the table below:</p>
+        <table id="table_power_rank_range">
+            <caption>Power Rank Range Table</caption>
+            <thead>
+                <tr>
+                    <th>Power Rank</th>
+                    <th>Range in Areas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Shift 0</th>
+                    <td>Touch only</td>
+                </tr>
+                <tr>
+                    <th>Feeble</th>
+                    <td>Touch only</td>
+                </tr>
+                <tr>
+                    <th>Poor</th>
+                    <td>1 area</td>
+                </tr>
+                <tr>
+                    <th>Typical</th>
+                    <td>2 areas</td>
+                </tr>
+                <tr>
+                    <td>Good</td>
+                    <td>4 areas</td>
+                </tr>
+                <tr>
+                    <th>Excellent</th>
+                    <td>6 areas</td>
+                </tr>
+                <tr>
+                    <th>Remarkable</th>
+                    <td>8 areas</td>
+                </tr>
+                <tr>
+                    <th>Incredible</th>
+                    <td>10 areas</td>
+                </tr>
+                <tr>
+                    <th>Amazing</th>
+                    <td>20 areas</td>
+                </tr>
+                <tr>
+                    <th>Monstrous</th>
+                    <td>40 areas</td>
+                </tr>
+                <tr>
+                    <th>Unearthly</th>
+                    <td>60 areas</td>
+                </tr>
+                <tr>
+                    <th>Shift-X</th>
+                    <td>80 areas</td>
+                </tr>
+                <tr>
+                    <th>Shift-Y</th>
+                    <td>160 areas</td>
+                </tr>
+                <tr>
+                    <th>Shift-Z</th>
+                    <td>400 areas</td>
+                </tr>
+                <tr>
+                    <th>Class 1000</th>
+                    <td>100 miles</td>
+                </tr>
+                <tr>
+                    <th>Class 3000</th>
+                    <td>10,000 miles</td>
+                </tr>
+                <tr>
+                    <th>Class 5000</th>
+                    <td>1,000,000 miles</td>
+                </tr>
+                <tr>
+                    <th>Beyond</th>
+                    <td>Unlimited</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Therefore, someone with Remarkable magnetic manipulation could affect objects 8 areas away, while a
+            character (one would hope a non-player character) with Class 5000 magnetic manipulation could manipulate
+            items on the Moon.
+        </p>
+        <p>
+            There are some cases when a hero may use a Power in a way it was not originally intended to carry out a
+            certain task. These are known as Power Stunts.
+        </p>
+        <p>
+            For example, a character with the Speed Power suddenly decides to run in a circle very fast, creating a
+            whirlwind. Or a character with Leaping Power decides to use his powerful leg muscles to disrupt the
+            ground, knocking over an opponent. Or our example above, the wall-crawler decides to use his
+            stick-to-it-ness to grapple a thief. These are Power Stunts. Certain Powers, such as weather elemental
+            controls, almost entirely consist of these stunts.
+        </p>
+        <p>
+            The players will, without a doubt, come up with an innumerable amount of stunts for their Powers (and
+            the Judge will be told how to decide if a Power Stunt is possible in his Judge’s Book). The basic
+            question to be asked is: Has this hero done this sort of thing before?
+        </p>
+        <p>
+            If you are playing an established Marvel Super Hero, the question of whether he has done this stunt
+            before or not is determined from the Marvel Comics themselves. Each time you can spot him using this
+            particular stunt, that counts as one time. <i>Example:</i> In one issue of X-Men, Nightcrawler uses his
+            power
+            to make three quick teleports, behind three separate opponents. He does it again several issues later.
+            This means he has pulled this Power Stunt twice.
+        </p>
+        <p>
+            If you are playing a hero of your own creation, or a hero that you have never seen perform this stunt,
+            this means you have never performed it before. In either case, the Judge may say "no" to a stunt, it he
+            feels it unbalances the character.
+        </p>
+        <p>
+            The type of FEAT (made against the Power rank) needed to make a Power Stunt is determined by the number
+            of times your character has tried it.
+        </p>
+        <ul>
+            <li>Never tried it — red FEAT roll</li>
+            <li>Tried it up to three times — yellow FEAT roll</li>
+            <li>Tried it more than three times — green FEAT roll</li>
+        </ul>
+        <p>
+            In addition, a character making a Power Stunt must lay out 100 Karma points to make the roll (in
+            addition to any other Karma he may spend — see Karma). Spending the Karma does not guarantee success;
+            it only ensures that yes, the character can try the stunt. If the stunt is ruled impossible by the
+            Judge, no Karma is spent.
+        </p>
+        <p>
+            If a player character has tried a stunt more then ten times, it is considered to be part of his or her
+            bag al tricks for that Power, and a FEAT roll is not necessary to say if it is possible (this is similar
+            to purchasing another Power in full, but allowing the player to use the Power as he is paying for it).
+        </p>
+        <p>
+            Failing the FEAT means the Power Stunt has failed. The manner of failure will depend entirely on the
+            situation. For the wall-crawler trying to grapple, the Power may fail to operate. For the speedster
+            running in circles, the whirlwind may be uncontrollable. For Nightcrawler trying a triple 'port, he may
+            get only one guy. The Judge is instructed that while the failure may be life-endangering, it should not
+            be initially or immediately deadly.
+        </p>
+        <h4 id="talent_feats">Talent FEATs</h4>
+        <a href="#top">Back to top</a>
+        <p>
+            Talents are used in two fashions. In the first case, they may modify the abilities of the character in
+            specific instances.
+        </p>
+        <p>
+            For example, take the Science and Professional Talents. A Talent in Biology gives you a +1CS on Reason
+            FEATs which involve Biology. The players are encouraged to use this whenever they can get away with it,
+            within reason. While said character with Biology cannot identify the presence of radiation any better
+            than the next guy, he can look at the plant life and from that deduce (with his +1CS) that there is or
+            was a radiation source in the area. (The moral of the story is, players should get creative when using
+            Talents.)
+        </p>
+        <p>
+            Certain Talents do not modify Talent FEATs. They either provide for specific abilities (such as First
+            Aid) or special backgrounds (such as Mystic Origin or Heir to Fortune).
+        </p>
+        <h4 id="popularity_feats">Popularity FEATs</h4>
+        <a href="#top">Back to top</a>
+        <p>
+            A Popularity FEAT is used whenever you want to get something from someone else. This may be borrowing a
+            car from a friend, getting a hot tip from a police sergeant, finagling a favor from a newspaper
+            columnist, or prying information from a stoolie, as well as getting special equipment from the
+            government or persuading a terrorist to surrender. Popularity is a measure of personal charm, charisma,
+            and good looks, combined with the hero's reputation for honesty and fair play (Spider-Man is a nice guy,
+            but thanks to the Daily Bugle he usually can't get the time of day).
+        </p>
+        <h5 id="using_popularity">Using Popularity</h5>
+        <a href="#top">Back to top</a>
+        <p>When dealing one on one with a non-player character, that NPC usually has a predisposition to the hero of
+            either Friendly, Neutral, Unfriendly, or Hostile.</p>
+        <p>Friendly characters and organizations include:</p>
+        <ul>
+            <li>Close friends and relatives of the hero</li>
+            <li>Listed Contacts for the hero Neutral characters and organizations include:</li>
+            <li>People who have never met the hero, but have heard about him</li>
+            <li>Other heroes, unless they have worked together before</li>
+            <li>Large groups of strangers</li>
+        </ul>
+        <p>Unfriendly characters and organizations include:</p>
+        <ul>
+            <li>People who have never met or heard of the hero</li>
+            <li>Total strangers</li>
+            <li>Individuals with opposite Popularity (negative if the hero is positive, and vice versa)</li>
+            <li>Neutral characters whom the character has offended, perhaps by not returning something</li>
+        </ul>
+        <p>Hostile characters and organizations include:</p>
+        <ul>
+            <li>People who are actively opposing the hero and his goals</li>
+            <li>Sworn enemies</li>
+        </ul>
+        <p>
+            Enemies and people the character has hurt are considered totally Hostile, and will not under normal
+            circumstances even listen to the hero, much less go along with his ideas. (There are exceptions to this.
+            For example, if the character is getting something out of the deal, he may be more willing to go along
+            with it).
+        </p>
+        <p>
+            A Popularity FEAT is rolled against the character's Popularity rank number. This determines in which
+            rank it will fall (example: a Popularity of 45 is rolled on the Incredible column).
+        </p>
+        <ul>
+            <li>Friendly targets require a green FEAT</li>
+            <li>Neutral targets require a yellow FEAT</li>
+            <li>Unfriendly targets require a red FEAT</li>
+            <li>Hostile targets are impossible FEATs</li>
+        </ul>
+        <p>
+            The effects of success or failure depend on the group and the thing sought. A failure for a Friendly
+            group is a polite refusal, usually with a good reason ("I'm sorry, but the S.H.I.E.L.D. Helicarrier is
+            not available - company policy.") A failure for a Neutral group is a curt refusal and potential for the
+            group becoming Unfriendly. A failure for an Unfriendly group means the individual or group turns ugly,
+            and the hero may be attacked.
+        </p>
+        <h5 id="column_shifts_in_popularity_feats">Column Shifts in Popularity FEATs</h5>
+        <a href="#top">Back to top</a>
+        <p>
+            The nature of the request will influence the column being used. Here are some guidelines for the
+            players:
+        </p>
+        <table id="table_column_shifts_in_popularity_feats">
+            <caption>Column Shifts in Popularity FEATs</caption>
+            <thead>
+                <tr>
+                    <th>Feats</th>
+                    <th>Column Shift</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The target benefits</td>
+                    <td>+2CS</td>
+                </tr>
+                <tr>
+                    <td>The target is placed in danger</td>
+                    <td>-3CS</td>
+                </tr>
+                <tr>
+                    <td>The item in question is of up to Good value</td>
+                    <td>-1CS</td>
+                </tr>
+                <tr>
+                    <td>The item in question is of up to Remarkable value</td>
+                    <td>-2CS</td>
+                </tr>
+                <tr>
+                    <td>There is a good chance the item will not be returned</td>
+                    <td>-2CS</td>
+                </tr>
+                <tr>
+                    <td>The item is unique</td>
+                    <td>-3CS</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Popularity FEATs are used only when dealing with NPCs (whether by players or other NPCs). A Popularity
+            FEAT is never used against the players to force them to perform actions against their wills (normally).
+        </p>
+        <h5 id="negative_popularity">Negative Popularity</h5>
+        <a href="#top">Back to top</a>
+        <p>
+            There are charismatic bad guys like Doctor Doom, whose very evil bends others to their will. There are
+            also those powerful characters such as Rhino and Juggernaut, from whom people flee. Finally, there are
+            heroes, who through bad press or prejudice (mutants) suffer from a negative Popularity.
+        </p>
+        <p>
+            Negative Popularity operates as positive Popularity, save that it ignores whether the target is
+            friendly, neutral, or unfriendly. Everything is a yellow FEAT. The only modifier that comes into play is
+            if the request is in the target's best interests ("Run, you dolts!" is in the target's interest).
+            Characters with negative Popularity can never approach individuals other than Contacts for items and
+            favors (which is why theft is always a major pan of criminal behavior) .
+        </p>
+        <p>
+            A Negative Popularity is represented as a minus "-" before the word, such as "- Typical" (-5
+            Popularity). A character with negative Popularity suffers penalties in receiving Karma.
+        </p>
+        <h4 id="resource_feats">Resource FEATs</h4>
+        <a href="#top">Back to top</a>
+
+        <p>
+            To purchase anything, a character must make a Resource FEAT. This is the equivalent of a credit check,
+            or rattling the piggy bank, or checking the bank account to see how much cash is available. This is over
+            and above that amount necessary to get by on.
+        </p>
+        <p>
+            A Resource FEAT may be made by a character once per week. If a Resource FEAT has been made by a
+            character in the previous seven days, any Resource FEATs following automatically fail.
+        </p>
+        <p>
+            A Resource FEAT is figured in almost the same fashion as a normal FEAT, with one important exception. A
+            lone character may not try to purchase an item with a higher rank than his Resource rank. Other rules
+            apply – if a Resource rank is three ranks lower, the purchase is automatic; if one or two less than the
+            Resource rank, a green FEAT is needed, and if equal, then a yellow FEAT is needed.
+        </p>
+        <p>
+            Success indicates the hero may purchase the item in question. Failure indicates the item is more
+            expensive than he can afford. He cannot try for any other item of that rank or higher for the next week.
+            Then he can make another attempt for that item, or another item (this represents the idea of saving up
+            for a purchase).
+        </p>
+        <h5 id="bank_loans_option">Bank Loans Option</h5>
+        <a href="#top">Back to top</a>
+        <p>
+            Characters may purchase something up to one rank higher than their Resource rank through a lending
+            institution. The character then has to worry about making a Resource FEAT each month of two ranks less
+            for as many months as the rank number of the item. Failure to pay results in the bank taking back the
+            item in question. There are other institutions that lend money. They employ seven-foot tall gentlemen
+            named Guido to collect.
+        </p>
+        <p>
+            <i>Example:</i> Peter Parker has a Poor Resource rank, and his apartment building rent is Poor as well.
+            He makes a yellow FEAT roll to see if he can pay his rent. Failure indicates he cannot pay that week and
+            may try to make it up the next week (providing he gives Mrs. Muggins a decent excuse for not tossing him
+            out). Success means that he keeps Mrs. Muggins off his back for another month.
+        </p>
+        <p>
+            <i>Example:</i> Tony Stark has an Excellent Resource rank. He wants to buy a car with a Good rank. He
+            can do so with a green FEAT (failure indicates a cash flow problem -- he doesn't have it at the moment).
+            He can pay for a night on the town (Typical) without making a FEAT roll.
+        </p>
+        <p>
+            <i>Example:</i> Tony Stark used to run Stark International, a Large Corporation with Incredible
+            Resources. Incredible Resources allow them to buy their boss a car for off ice use, but they may have to
+            borrow money from the banks to rebuild the damage done by Iron Man's battle with Obadiah Stane.
+        </p>
+        <h4 id="combined_and_multiple_feats">Combined and Multiple FEATs</h4>
+        <a href="#top">Back to top</a>
+        <h5 id="combined_actions">Combined Actions</h5>
+        <a href="#top">Back to top</a>
+        <p>
+            Individuals may help each other in performing FEATs (lifting a car, researching the function of an alien
+            device, etc.). Check the ability both characters are using. If the lower of the two characters is within
+            one rank of the higher, the character with the higher ability receives a +1CS benefit to the FEAT. This
+            benefit may be used in cases of using complementary Powers for the same FEAT as well, provided that
+            Power aids the situation .
+        </p>
+        <p>
+            <i>Example One:</i> Vision, with Amazing(50) Strength, helps She-Hulk (Monstrous(75) Strength) pull up
+            an overturned crane. The column checked for the FEAT is Unearthly (Monstrous shifted one to the right).
+        </p>
+        <p>
+            <i>Example Two:</i> Sunspot, with Remarkable(30) Strength, helps She-Hulk lift up the crane. The column
+            checked is still Monstrous, since Sunspot's Strength is significantly lower than She-Hulk's
+        </p>
+        <p>
+            <i>Example Three:</i> Shaman summons a wind of Amazing (50) intensity to help She-Hulk lift the crane.
+            Should the Judge decide that the power complements the ability that is being checked, the FEAT is rolled
+            on the Unearthly column. Otherwise, it is rolled on the Monstrous column. (If the Judge has good reason,
+            such as the wind blowing up a lot of stinging dust, he may make the FEAT an Amazing FEAT owing to the
+            added difficulty).
+        </p>
+        <h5 id="more_than_one_action_in_the_same_round">More than One Action in the Same Round</h5>
+        <a href="#top">Back to top</a>
+        <p>
+            In noncombat situations, characters who perform more than one action in the same round may do so with
+            the note that the actions may require a larger FEAT than previously.
+        </p>
+        <p>
+            A character may perform up to three noncombat actions in a round, or one combat action and one
+            non-combat action (for multiple combat operations, check in the Combat section). The difficulty of the
+            FEATs is raised, however.
+        </p>
+        <p>
+            If both actions are Automatic, they both may be performed in a single round without either FEAT being
+            increased.
+        </p>
+        <p>
+            If the tougher action requires a green FEAT, then both actions will require yellow FEATs to succeed.
+        </p>
+        <p>
+            If the tougher action requires a yellow FEAT, then both actions will require red FEATs to succeed.
+        </p>
+        <p>
+            If the tougher action requires a red FEAT then both actions may not be performed in the same round (or
+            rather, both will fail).
+        </p>
+        <h2 id="movement">Movement</h2>
+        <a href="#top">Back to top</a>
+        <h3 id="area_movement">Area Movement</h3>
+        <a href="#top">Back to top</a>
+        <h3 id="ranged_movement">Ranged Movement</h3>
+        <a href="#top">Back to top</a>
+        <h3 id="vertical_movement">Vertical Movement</h3>
+        <a href="#top">Back to top</a>
+        <h4 id="upward_movement">Upward Movement</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="downward_movement">Downward Movement</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="catching_items_as_falling">Catching Items as Falling</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="catching_people_while_falling">Catching People while Falling</h4>
+        <a href="#top">Back to top</a>
+        <h3 id="flight_and_gliding">Flight and Gliding</h3>
+        <a href="#top">Back to top</a>
+        <h4 id="deceleration">Deceleration</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="landing">Landing</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="altitude">Altitude</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="diving">Diving</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="obstructions">Obstructions</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="turns">Turns</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="low_altitude_flight">Low Altitude Flight</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="gliding">Gliding</h4>
+        <a href="#top">Back to top</a>
+        <h3 id="swimming_and_water_movement">Swimming and Water Movement</h3>
+        <a href="#top">Back to top</a>
+        <h3 id="long_distance_movement">Long Distance Movement</h3>
+        <a href="#top">Back to top</a>
+        <table id="table_long_distance_movement">
+            <caption>Long Distance Movement</caption>
+            <colgroup>
+                <col>
+                <col span="2">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Rank</th>
+                    <th colspan="2" scope="colgroup">Land/Water</th>
+                    <th colspan="2" scope="colgroup">Air</th>
+                </tr>
+                <tr>
+                    <th scope="col">Area/Round</th>
+                    <th scope="col">MPH/MPM</th>
+                    <th scope="col">Area/Round</th>
+                    <th scope="col">MPH/MPM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Feeble</th>
+                    <td>1</td>
+                    <td>15/.25</td>
+                    <td>2</td>
+                    <td>30/.5</td>
+                </tr>
+                <tr>
+                    <th scope="row">Poor</th>
+                    <td>2</td>
+                    <td>30/.5</td>
+                    <td>4</td>
+                    <td>60/1</td>
+                </tr>
+                <tr>
+                    <th scope="row">Typical</th>
+                    <td>3</td>
+                    <td>45/.75</td>
+                    <td>6</td>
+                    <td>90/1.5</td>
+                </tr>
+                <tr>
+                    <th scope="row">Good</th>
+                    <td>4</td>
+                    <td>60/1</td>
+                    <td>8</td>
+                    <td>120/2</td>
+                </tr>
+                <tr>
+                    <th scope="row">Excellent</th>
+                    <td>5</td>
+                    <td>75/1.25</td>
+                    <td>10</td>
+                    <td>150/2.5</td>
+                </tr>
+                <tr>
+                    <th scope="row">Remarkable</th>
+                    <td>6</td>
+                    <td>90/1.5</td>
+                    <td>15</td>
+                    <td>225/3.75</td>
+                </tr>
+                <tr>
+                    <th scope="row">Incredible</th>
+                    <td>7</td>
+                    <td>105/1.75</td>
+                    <td>20</td>
+                    <td>300/5</td>
+                </tr>
+                <tr>
+                    <th scope="row">Amazing</th>
+                    <td>8</td>
+                    <td>120/2</td>
+                    <td>25</td>
+                    <td>375/6.25</td>
+                </tr>
+                <tr>
+                    <th scope="row">Monstrous</th>
+                    <td>9</td>
+                    <td>135/2.25</td>
+                    <td>30</td>
+                    <td>450/7.5</td>
+                </tr>
+                <tr>
+                    <th scope="row">Unearthly</th>
+                    <td>10</td>
+                    <td>150/2.5</td>
+                    <td>40</td>
+                    <td>600/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-X</th>
+                    <td>12</td>
+                    <td>180/3</td>
+                    <td>50</td>
+                    <td>750/12.5</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-Y</th>
+                    <td>14</td>
+                    <td>210/3.5</td>
+                    <td>100</td>
+                    <td>1500/25</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-Z</th>
+                    <td>16</td>
+                    <td>240/4</td>
+                    <td>200</td>
+                    <td>3750/62.5</td>
+                </tr>
+                <tr>
+                    <th scope="row">Class 1000</th>
+                    <td>32</td>
+                    <td>480/8</td>
+                    <td colspan="2">Interplanetary</td>
+                </tr>
+                <tr>
+                    <th scope="row">Class 3000</th>
+                    <td>50</td>
+                    <td>750/12.5</td>
+                    <td colspan="2">Near-Light</td>
+                </tr>
+                <tr>
+                    <th scope="row">Class 5000</th>
+                    <td>100</td>
+                    <td>1500/25.0</td>
+                    <td colspan="2">Teleportation</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 id="exhaustion_and_the_long_distance_runner">Exhaustion and the Long Distance Runner</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="speed_feats">Speed Feats</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="teleporters">Teleporters</h4>
+        <a href="#top">Back to top</a>
+        <h4 id="leaping">Leaping</h4>
+        <a href="#top">Back to top</a>
+        <table id="table_leaping">
+            <caption>Leaping</caption>
+            <colgroup>
+                <col>
+            </colgroup>
+            <colgroup span="3"></colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Strength</th>
+                    <th scope="colgroup" colspan="3">Leap in Feet/Areas (of Floors)</th>
+                </tr>
+                <tr>
+                    <th scope="col" rowspan="2"></th>
+                    <th scope="col">Up</th>
+                    <th scope="col">Across</th>
+                    <th scope="col">Down</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Feeble</th>
+                    <td>2'/0</td>
+                    <td>2'/0</td>
+                    <td>3'/0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Poor</th>
+                    <td>4'/0</td>
+                    <td>4'/0</td>
+                    <td>8'/0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Typical</th>
+                    <td>6'/0</td>
+                    <td>6'/0</td>
+                    <td>9'/0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Good</th>
+                    <td>10'/0</td>
+                    <td>10'/0</td>
+                    <td>15'/1</td>
+                </tr>
+                <tr>
+                    <th scope="row">Excellent</th>
+                    <td>20'/1</td>
+                    <td>20'/0</td>
+                    <td>30'/2</td>
+                </tr>
+                <tr>
+                    <th scope="row">Remarkable</th>
+                    <td>30'/2</td>
+                    <td>30'/0</td>
+                    <td>45'/3</td>
+                </tr>
+                <tr>
+                    <th scope="row">Incredible</th>
+                    <td>40'/2</td>
+                    <td>40'/0</td>
+                    <td>60'/4</td>
+                </tr>
+                <tr>
+                    <th scope="row">Amazing</th>
+                    <td>50'/3</td>
+                    <td>50'/0</td>
+                    <td>75'/5</td>
+                </tr>
+                <tr>
+                    <th scope="row">Monstrous</th>
+                    <td>75'/5</td>
+                    <td>75'/0</td>
+                    <td>105'/7</td>
+                </tr>
+                <tr>
+                    <th scope="row">Unearthly</th>
+                    <td>100'/6</td>
+                    <td>100'/0</td>
+                    <td>150'/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-X</th>
+                    <td>150'/10</td>
+                    <td>150'/0</td>
+                    <td>225'/15</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-Y</th>
+                    <td>200'/13</td>
+                    <td>200'/2</td>
+                    <td>300'/20</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-Z</th>
+                    <td>500'/33</td>
+                    <td>500'/4</td>
+                    <td>750'/50</td>
+                </tr>
+                <tr>
+                    <th scope="row">CL 1000</th>
+                    <td>1000'/60</td>
+                    <td>1000'/8</td>
+                    <td>1500'/100</td>
+                </tr>
+                <tr>
+                    <th scope="row">CL 3000</th>
+                    <td>3000'/180</td>
+                    <td>3000'/25</td>
+                    <td>4500'/300</td>
+                </tr>
+                <tr>
+                    <th scope="row">CL 5000</th>
+                    <td>5000'/300</td>
+                    <td>5000'/40</td>
+                    <td>7500'/500</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="combat">Combat</h2>
+
+
+
+
+        <table id="table_throwing">
+            <caption>Throwing</caption>
+            <colgroup>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Strength</th>
+                    <th scope="col">Range in Areas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Shift 0</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Feeble</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">Poor</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">Typical</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">Good</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th scope="row">Excellent</th>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th scope="row">Remarkable</th>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">Incredible</th>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th scope="row">Amazing</th>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th scope="row">Monstrous</th>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th scope="row">Unearthly</th>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-X</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-Y</th>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shift-Z</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th scope="row">Class 1000</th>
+                    <td>LOS</td>
+                </tr>
+                <tr>
+                    <th scope="row">Class 3000</th>
+                    <td>LOS</td>
+                </tr>
+                <tr>
+                    <th scope="row">Class 5000</th>
+                    <td>LOS</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>
+            <a href="#top">Back to top</a>
+        </p>
+        <p>
+            <small>Everything Marvel and MSHRPG is ®™© current rights holders, current year. Used for educational
+                purposes
+                only.</small>
+        </p>
+    </footer>
+</body>
+
+</html>

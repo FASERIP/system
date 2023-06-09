@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSR Marvel Super Heroes RPG Advanced — Universal Table</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        body * {
+            box-sizing: border-box;
+        }
+
+        body>header,
+        body>main {
+            padding: 1ex 1em;
+        }
+
+        table {
+            width: 100%;
+            max-width: 96vw;
+            table-layout: fixed;
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        th {
+            padding: 0.25ex 0.15em 0.25ex 0.15em;
+        }
+
+        td {
+            padding: 0.5ex 0.5em 0.5ex 0.5em;
+        }
+
+        th span {
+            display: inline-block;
+            width: 100%;
+        }
+
+        thead tr:first-of-type th div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 12ex;
+        }
+
+        thead th span:first-of-type {
+            font-size: large;
+        }
+
+        thead th span:nth-of-type(2) {
+            font-size: x-small;
+        }
+
+        thead:first-of-type th span:first-of-type {
+            font-size: x-small;
+        }
+
+        thead:first-of-type th span:nth-of-type(2) {
+            font-size: xx-large;
+        }
+
+        [data-result-color="White"] {
+            background-color: white;
+        }
+
+        tbody:nth-of-type(2) td[data-result-color="White"] {
+            color: white;
+        }
+
+        [data-result-color="Green"] {
+            background-color: green;
+            color: white;
+        }
+
+        tbody:nth-of-type(2) td[data-result-color="Green"] {
+            color: green;
+        }
+
+        [data-result-color="Yellow"] {
+            background-color: yellow;
+        }
+
+        tbody:nth-of-type(2) td[data-result-color="Yellow"] {
+            color: yellow;
+        }
+
+        [data-result-color="Red"] {
+            background-color: red;
+            color: white;
+        }
+
+        tbody:nth-of-type(2) td[data-result-color="Red"] {
+            color: red;
+        }
+
+        table:first-of-type thead tr:nth-of-type(2) th,
+        tbody:nth-of-type(2) tr:nth-child(3n) [data-result-color="White"],
+        table:first-of-type tbody:nth-of-type(2) tr:nth-child(3n) th {
+            background-color: lightgrey;
+        }
+
+        tbody:nth-of-type(2) tr:nth-child(3n) td[data-result-color="White"] {
+            color: lightgrey
+        }
+
+        tbody:nth-of-type(2) tr:nth-child(3n) [data-result-color="Green"] {
+            background-color: darkgreen;
+        }
+
+        tbody:nth-of-type(2) tr:nth-child(3n) td[data-result-color="Green"] {
+            color: darkgreen;
+        }
+
+        tbody:nth-of-type(2) tr:nth-child(3n) [data-result-color="Yellow"] {
+            background-color: gold;
+        }
+
+        tbody:nth-of-type(2) tr:nth-child(3n) td[data-result-color="Yellow"] {
+            color: gold;
+        }
+
+        tbody:nth-of-type(2) tr:nth-child(3n) [data-result-color="Red"] {
+            background-color: crimson;
+        }
+
+        tbody:nth-of-type(2) tr:nth-child(3n) td[data-result-color="Red"] {
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="top">TSR Marvel Super Heroes RPG Advanced — Universal Table</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">MSHRPG Home</a>
+                    <ul>
+                        <li>
+                            <a href="/campaign/index.html">Campaign Information</a>
+                            <ul>
+                                <li>
+                                    <a href="/campaign/characters/index.html">Characters</a>
+                                    <ul>
+                                        <li>
+                                            <a href="/campaign/characters/nightsteel.html">Nightsteel</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/characters/dawnbringer.html">Dawnbringer</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/characters/lovelace.html">LOVELACE</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/characters/ashtaret.html">Ashtaret</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/characters/npc/index.html">NPC Statblocks</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="/campaign/characters/npc/steel_sentinel.html">Steel
+                                                        Sentinels</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/campaign/equipment/index.html">Custom Equipment</a>
+                                    <ul>
+                                        <li>
+                                            <a href="/campaign/equipment/dawnbringers_costume.html">Dawnbringer's
+                                                Costume</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/equipment/guardian_blaster_mk_i.html">Guardian Blaster
+                                                Mk. I</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/equipment/sentinel_battlesuit_mk_i.html">Sentinel
+                                                Battlesuit Mk.
+                                                I</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/equipment/pathfinder_mk_i.html">Pathfinder Mk. I</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/equipment/defender_staff_mk_i.html">Defender Staff Mk.
+                                                I</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/campaign/organizations/index.html">Organizations</a>
+                                    <ul>
+                                        <li>
+                                            <a href="/campaign/organizations/steel_sentinels_incorporated.html">Steel
+                                                Sentinels,
+                                                Incorporated</a>
+                                        </li>
+                                    </ul>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/campaign/locations/index.html">Locations</a>
+                                    <ul>
+                                        <li>
+                                            <a href="/campaign/locations/greymount_manor.html">Greymount Manor</a>
+                                        </li>
+                                        <li>
+                                            <a href="/campaign/locations/steel_sentinels_headquarters.html">Steel
+                                                Sentinel
+                                                Headquarters</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/system/index.html">Game System Reference</a>
+                            <ul>
+                                <li><a>Universal Table</a></li>
+                                <li><a href="/system/powers.html">Powers</a></li>
+                                <li><a href="/system/talents.html">Talents</a></li>
+                                <li><a href="/system/contacts.html">Contacts</a></li>
+                                <li><a href="/system/equipment.html">Equipment</a></li>
+                                <li><a href="/system/tables.html">Other Tables</a></li>
+                                <li><a href="/system/origins.html">Origins</a></li>
+                                <li><a href="/system/magic.html">Magic</a></li>
+                                <li><a href="/system/supporting_cast.html">Animals, Aliens, Criminals, and Other
+                                        Supporting
+                                        Players</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <caption>Universal Table</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Result</th>
+                    <th scope="col" data-column-abbreviation="BA" data-column-name="Blunt Attack"
+                        data-column-ability="Fighting">
+                        <div><span>Blunt Attack</span> <span>BA</span> <span>Fighting</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="EA" data-column-name="Edged Attack"
+                        data-column-ability="Fighting">
+                        <div><span>Edged Attack</span> <span>EA</span> <span>Fighting</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Sh" data-column-name="Shooting"
+                        data-column-ability="Agility">
+                        <div><span>Shooting</span> <span>Sh</span> <span>Agility</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="ET" data-column-name="Edged Throwing"
+                        data-column-ability="Agility">
+                        <div><span>Edged Throwing</span> <span>ET</span> <span>Agility</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="BT" data-column-name="Blunt Throwing"
+                        data-column-ability="Agility">
+                        <div><span>Blunt Throwing</span> <span>BT</span> <span>Agility</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="En" data-column-name="Energy"
+                        data-column-ability="Agility">
+                        <div><span>Energy</span> <span>En</span> <span>Agility</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Fo" data-column-name="Force"
+                        data-column-ability="Agility">
+                        <div><span>Force</span> <span>Fo</span> <span>Agility</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Gp" data-column-name="Grappling"
+                        data-column-ability="Strength">
+                        <div><span>Grappling</span> <span>Gp</span> <span>Strength</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Gb" data-column-name="Grabbing"
+                        data-column-ability="Strength">
+                        <div><span>Grabbing</span> <span>Gb</span> <span>Strength</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Es" data-column-name="Escape"
+                        data-column-ability="Strength">
+                        <div><span>Escape</span> <span>Es</span> <span>Strength</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Ch" data-column-name="Charging"
+                        data-column-ability="Endurance">
+                        <div><span>Charging</span> <span>Ch</span> <span>Endurance</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Do" data-column-name="Dodging"
+                        data-column-ability="Agility">
+                        <div><span>Dodging</span> <span>Do</span> <span>Agility</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Ev" data-column-name="Evading"
+                        data-column-ability="Fighting">
+                        <div><span>Evading</span> <span>Ev</span> <span>Fighting</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Bl" data-column-name="Blocking"
+                        data-column-ability="Strength">
+                        <div><span>Blocking</span> <span>Bl</span> <span>Strength</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Ca" data-column-name="Catching"
+                        data-column-ability="Agility">
+                        <div><span>Catching</span> <span>Ca</span> <span>Agility</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="St" data-column-name="Stun?"
+                        data-column-ability="Endurance">
+                        <div><span>Slam?</span> <span>Sl</span> <span>Endurance</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Sl" data-column-name="Slam?"
+                        data-column-ability="Endurance">
+                        <div><span>Stun?</span> <span>St</span> <span>Endurance</span></div>
+                    </th>
+                    <th scope="col" data-column-abbreviation="Ki" data-column-name="Kill"
+                        data-column-ability="Endurance">
+                        <div><span>Kill?</span> <span>Ki</span> <span>Endurance</span></div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col" data-result-color="White">White</th>
+                    <td data-result-color="White" data-result-effect="Miss" data-column-abbreviation="BA"
+                        data-column-name="Blunt Attack" data-column-ability="Fighting">Miss</td>
+                    <td data-result-color="White" data-result-effect="Miss" data-column-abbreviation="EA"
+                        data-column-name="Edged Attack" data-column-ability="Fighting">Miss</td>
+                    <td data-result-color="White" data-result-effect="Miss" data-column-abbreviation="Sh"
+                        data-column-name="Shooting" data-column-ability="Agility">Miss</td>
+                    <td data-result-color="White" data-result-effect="Miss" data-column-abbreviation="ET"
+                        data-column-name="Edged Throwing" data-column-ability="Agility">Miss</td>
+                    <td data-result-color="White" data-result-effect="Miss" data-column-abbreviation="BT"
+                        data-column-name="Blunt Throwing" data-column-ability="Agility">Miss</td>
+                    <td data-result-color="White" data-result-effect="Miss" data-column-abbreviation="En"
+                        data-column-name="Energy" data-column-ability="Agility">Miss</td>
+                    <td data-result-color="White" data-result-effect="Miss" data-column-abbreviation="Fo"
+                        data-column-name="Force" data-column-ability="Agility">Miss</td>
+                    <td data-result-color="White" data-result-effect="Miss" data-column-abbreviation="Gp"
+                        data-column-name="Grappling" data-column-ability="Strength">Miss</td>
+                    <td data-result-color="White" data-result-effect="Miss" data-column-abbreviation="Gb"
+                        data-column-name="Grabbing" data-column-ability="Strength">Miss</td>
+                    <td data-result-color="White" data-result-effect="Miss" data-column-abbreviation="Es"
+                        data-column-name="Escape" data-column-ability="Strength">Miss</td>
+                    <td data-result-color="White" data-result-effect="Miss" data-column-abbreviation="Ch"
+                        data-column-name="Charging" data-column-ability="Endurance">Miss</td>
+                    <td data-result-color="White" data-result-effect="None" data-column-abbreviation="Do"
+                        data-column-name="Dodging" data-column-ability="Agility">None</td>
+                    <td data-result-color="White" data-result-effect="Autohit" data-column-abbreviation="Ev"
+                        data-column-name="Evading" data-column-ability="Fighting">Autohit</td>
+                    <td data-result-color="White" data-result-effect="-6CS" data-column-abbreviation="Bl"
+                        data-column-name="Blocking" data-column-ability="Strength">-6CS</td>
+                    <td data-result-color="White" data-result-effect="Autohit" data-column-abbreviation="Ca"
+                        data-column-name="Catching" data-column-ability="Agility">Autohit</td>
+                    <td data-result-color="White" data-result-effect="1-10" data-column-abbreviation="St"
+                        data-column-name="Stun?" data-column-ability="Endurance">1-10</td>
+                    <td data-result-color="White" data-result-effect="Grand Slam" data-column-abbreviation="Sl"
+                        data-column-name="Slam?" data-column-ability="Endurance">Gr. Slam</td>
+                    <td data-result-color="White" data-result-effect="Endurance Loss" data-column-abbreviation="Ki"
+                        data-column-name="Kill" data-column-ability="Endurance">En. Loss</td>
+                </tr>
+                <tr>
+                    <th scope="col" data-result-color="Green">Green</th>
+                    <td data-result-color="Green" data-result-effect="Hit" data-column-abbreviation="EA"
+                        data-column-name="Edged Attack" data-column-ability="Fighting">Hit</td>
+                    <td data-result-color="Green" data-result-effect="Hit" data-column-abbreviation="Sh"
+                        data-column-name="Shooting" data-column-ability="Agility">Hit</td>
+                    <td data-result-color="Green" data-result-effect="Hit" data-column-abbreviation="ET"
+                        data-column-name="Edged Throwing" data-column-ability="Agility">Hit</td>
+                    <td data-result-color="Green" data-result-effect="Hit" data-column-abbreviation="BT"
+                        data-column-name="Blunt Throwing" data-column-ability="Agility">Hit</td>
+                    <td data-result-color="Green" data-result-effect="Hit" data-column-abbreviation="BA"
+                        data-column-name="Blunt Attack" data-column-ability="Fighting">Hit</td>
+                    <td data-result-color="Green" data-result-effect="Hit" data-column-abbreviation="En"
+                        data-column-name="Energy" data-column-ability="Agility">Hit</td>
+                    <td data-result-color="Green" data-result-effect="Hit" data-column-abbreviation="Fo"
+                        data-column-name="Force" data-column-ability="Agility">Hit</td>
+                    <td data-result-color="Green" data-result-effect="Miss" data-column-abbreviation="Gp"
+                        data-column-name="Grappling" data-column-ability="Strength">Miss</td>
+                    <td data-result-color="Green" data-result-effect="Take" data-column-abbreviation="Gb"
+                        data-column-name="Grabbing" data-column-ability="Strength">Take</td>
+                    <td data-result-color="Green" data-result-effect="Miss" data-column-abbreviation="Es"
+                        data-column-name="Escape" data-column-ability="Strength">Miss</td>
+                    <td data-result-color="Green" data-result-effect="Hit" data-column-abbreviation="Ch"
+                        data-column-name="Charging" data-column-ability="Endurance">Hit</td>
+                    <td data-result-color="Green" data-result-effect="-2CS" data-column-abbreviation="Do"
+                        data-column-name="Dodging" data-column-ability="Agility">-2CS</td>
+                    <td data-result-color="Green" data-result-effect="Evasion" data-column-abbreviation="Ev"
+                        data-column-name="Evading" data-column-ability="Fighting">Evasion</td>
+                    <td data-result-color="Green" data-result-effect="-4CS" data-column-abbreviation="Bl"
+                        data-column-name="Blocking" data-column-ability="Strength">-4CS</td>
+                    <td data-result-color="Green" data-result-effect="Miss" data-column-abbreviation="Ca"
+                        data-column-name="Catching" data-column-ability="Agility">Miss</td>
+                    <td data-result-color="Green" data-result-effect="1" data-column-abbreviation="St"
+                        data-column-name="Stun?" data-column-ability="Endurance">1</td>
+                    <td data-result-color="Green" data-result-effect="1 Area" data-column-abbreviation="Sl"
+                        data-column-name="Slam?" data-column-ability="Endurance">1 Area</td>
+                    <td data-result-color="Green" data-result-effect="E/S" data-column-abbreviation="Ki"
+                        data-column-name="Kill" data-column-ability="Endurance">E/S</td>
+                </tr>
+                <tr>
+                    <th scope="col" data-result-color="Yellow">Yellow</th>
+                    <td data-result-color="Yellow" data-result-effect="Slam" data-column-abbreviation="BA"
+                        data-column-name="Blunt Attack" data-column-ability="Fighting">Slam</td>
+                    <td data-result-color="Yellow" data-result-effect="Stun" data-column-abbreviation="EA"
+                        data-column-name="Edged Attack" data-column-ability="Fighting">Stun</td>
+                    <td data-result-color="Yellow" data-result-effect="Bullseye" data-column-abbreviation="Sh"
+                        data-column-name="Shooting" data-column-ability="Agility">Bullseye</td>
+                    <td data-result-color="Yellow" data-result-effect="Stun" data-column-abbreviation="ET"
+                        data-column-name="Edged Throwing" data-column-ability="Agility">Stun</td>
+                    <td data-result-color="Yellow" data-result-effect="Hit" data-column-abbreviation="BT"
+                        data-column-name="Blunt Throwing" data-column-ability="Agility">Hit</td>
+                    <td data-result-color="Yellow" data-result-effect="Bullseye" data-column-abbreviation="En"
+                        data-column-name="Energy" data-column-ability="Agility">Bullseye</td>
+                    <td data-result-color="Yellow" data-result-effect="Bullseye" data-column-abbreviation="Fo"
+                        data-column-name="Force" data-column-ability="Agility">Bullseye</td>
+                    <td data-result-color="Yellow" data-result-effect="Partial" data-column-abbreviation="Gp"
+                        data-column-name="Grappling" data-column-ability="Strength">Partial</td>
+                    <td data-result-color="Yellow" data-result-effect="Grab" data-column-abbreviation="Gb"
+                        data-column-name="Grabbing" data-column-ability="Strength">Grab</td>
+                    <td data-result-color="Yellow" data-result-effect="Escape" data-column-abbreviation="Es"
+                        data-column-name="Escape" data-column-ability="Strength">Escape</td>
+                    <td data-result-color="Yellow" data-result-effect="Slam" data-column-abbreviation="Ch"
+                        data-column-name="Charging" data-column-ability="Endurance">Slam</td>
+                    <td data-result-color="Yellow" data-result-effect="-4CS" data-column-abbreviation="Do"
+                        data-column-name="Dodging" data-column-ability="Agility">-4CS</td>
+                    <td data-result-color="Yellow" data-result-effect="+1CS" data-column-abbreviation="Ev"
+                        data-column-name="Evading" data-column-ability="Fighting">+1CS</td>
+                    <td data-result-color="Yellow" data-result-effect="-2CS" data-column-abbreviation="Bl"
+                        data-column-name="Blocking" data-column-ability="Strength">-2CS</td>
+                    <td data-result-color="Yellow" data-result-effect="Damage" data-column-abbreviation="Ca"
+                        data-column-name="Catching" data-column-ability="Agility">Damage</td>
+                    <td data-result-color="Yellow" data-result-effect="No" data-column-abbreviation="St"
+                        data-column-name="Stun?" data-column-ability="Endurance">No</td>
+                    <td data-result-color="Yellow" data-result-effect="Stagger" data-column-abbreviation="Sl"
+                        data-column-name="Slam?" data-column-ability="Endurance">Stagger</td>
+                    <td data-result-color="Yellow" data-result-effect="No" data-column-abbreviation="Ki"
+                        data-column-name="Kill" data-column-ability="Endurance">No</td>
+                </tr>
+                <tr>
+                    <th scope="col" data-result-color="Red">Red</th>
+                    <td data-result-color="Red" data-result-effect="Stun" data-column-abbreviation="BA"
+                        data-column-name="Blunt Attack" data-column-ability="Fighting">Stun</td>
+                    <td data-result-color="Red" data-result-effect="Kill" data-column-abbreviation="EA"
+                        data-column-name="Edged Attack" data-column-ability="Fighting">Kill</td>
+                    <td data-result-color="Red" data-result-effect="Kill" data-column-abbreviation="Sh"
+                        data-column-name="Shooting" data-column-ability="Agility">Kill</td>
+                    <td data-result-color="Red" data-result-effect="Kill" data-column-abbreviation="ET"
+                        data-column-name="Edged Throwing" data-column-ability="Agility">Kill</td>
+                    <td data-result-color="Red" data-result-effect="Stun" data-column-abbreviation="BT"
+                        data-column-name="Blunt Throwing" data-column-ability="Agility">Stun</td>
+                    <td data-result-color="Red" data-result-effect="Kill" data-column-abbreviation="En"
+                        data-column-name="Energy" data-column-ability="Agility">Kill</td>
+                    <td data-result-color="Red" data-result-effect="Stun" data-column-abbreviation="Fo"
+                        data-column-name="Force" data-column-ability="Agility">Stun</td>
+                    <td data-result-color="Red" data-result-effect="Hold" data-column-abbreviation="Gp"
+                        data-column-name="Grappling" data-column-ability="Strength">Hold</td>
+                    <td data-result-color="Red" data-result-effect="Break" data-column-abbreviation="Gb"
+                        data-column-name="Grabbing" data-column-ability="Strength">Break</td>
+                    <td data-result-color="Red" data-result-effect="Reverse" data-column-abbreviation="Es"
+                        data-column-name="Escape" data-column-ability="Strength">Reverse</td>
+                    <td data-result-color="Red" data-result-effect="Stun" data-column-abbreviation="Ch"
+                        data-column-name="Charging" data-column-ability="Endurance">Stun</td>
+                    <td data-result-color="Red" data-result-effect="-6CS" data-column-abbreviation="Do"
+                        data-column-name="Dodging" data-column-ability="Agility">-6CS</td>
+                    <td data-result-color="Red" data-result-effect="+2CS" data-column-abbreviation="Ev"
+                        data-column-name="Evading" data-column-ability="Fighting">+2CS</td>
+                    <td data-result-color="Red" data-result-effect="+1CS" data-column-abbreviation="Bl"
+                        data-column-name="Blocking" data-column-ability="Strength">+1CS</td>
+                    <td data-result-color="Red" data-result-effect="Catch" data-column-abbreviation="Ca"
+                        data-column-name="Catching" data-column-ability="Agility">Catch</td>
+                    <td data-result-color="Red" data-result-effect="No" data-column-abbreviation="St"
+                        data-column-name="Stun?" data-column-ability="Endurance">No</td>
+                    <td data-result-color="Red" data-result-effect="No" data-column-abbreviation="Sl"
+                        data-column-name="Slam?" data-column-ability="Endurance">No</td>
+                    <td data-result-color="Red" data-result-effect="No" data-column-abbreviation="Ki"
+                        data-column-name="Kill" data-column-ability="Endurance">No</td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2">Rank</th>
+                    <th scope="col" data-column="0" data-rank-number-minimum="0" data-rank-number-standard="0"
+                        data-rank-number-maximum="0" data-rank-abbreviation="Sh0" data-rank-name="Shift 0">
+                        <div><span>Sh0</span> <span>Shift 0</span> <span>0</span></div>
+                    </th>
+                    <th scope="col" data-column="1" data-rank-number-minimum="1" data-rank-number-standard="2"
+                        data-rank-number-maximum="2" data-rank-abbreviation="Fe" data-rank-name="Feeble">
+                        <div><span>Fe</span> <span>Feeble</span> <span>2</span></div>
+                    </th>
+                    <th scope="col" data-column="2" data-rank-number-minimum="3" data-rank-number-standard="4"
+                        data-rank-number-maximum="4" data-rank-abbreviation="Pr" data-rank-name="Poor">
+                        <div><span>Pr</span> <span>Poor</span> <span>4</span></div>
+                    </th>
+                    <th scope="col" data-column="3" data-rank-number-minimum="5" data-rank-number-standard="6"
+                        data-rank-number-maximum="7" data-rank-abbreviation="Ty" data-rank-name="Typical">
+                        <div><span>Ty</span> <span>Typical</span> <span>6</span></div>
+                    </th>
+                    <th scope="col" data-column="4" data-rank-number-minimum="8" data-rank-number-standard="10"
+                        data-rank-number-maximum="15" data-rank-abbreviation="Gd" data-rank-name="Good">
+                        <div><span>Gd</span> <span>Good</span> <span>10</span></div>
+                    </th>
+                    <th scope="col" data-column="5" data-rank-number-minimum="16" data-rank-number-standard="20"
+                        data-rank-number-maximum="25" data-rank-abbreviation="Ex" data-rank-name="Excellent">
+                        <div><span>Ex</span> <span>Excellent</span> <span>20</span></div>
+                    </th>
+                    <th scope="col" data-column="6" data-rank-number-minimum="26" data-rank-number-standard="30"
+                        data-rank-number-maximum="36" data-rank-abbreviation="Rm" data-rank-name="Remarkable">
+                        <div><span>Rm</span> <span>Remarkable</span> <span>30</span></div>
+                    </th>
+                    <th scope="col" data-column="7" data-rank-number-minimum="37" data-rank-number-standard="40"
+                        data-rank-number-maximum="45" data-rank-abbreviation="In" data-rank-name="Incredible">
+                        <div><span>In</span> <span>Incredible</span> <span>40</span></div>
+                    </th>
+                    <th scope="col" data-column="8" data-rank-number-minimum="46" data-rank-number-standard="50"
+                        data-rank-number-maximum="62" data-rank-abbreviation="Am" data-rank-name="Amazing">
+                        <div><span>Am</span> <span>Amazing</span> <span>50</span></div>
+                    </th>
+                    <th scope="col" data-column="9" data-rank-number-minimum="63" data-rank-number-standard="75"
+                        data-rank-number-maximum="87" data-rank-abbreviation="Mn" data-rank-name="Monstrous">
+                        <div><span>Mn</span> <span>Monstrous</span> <span>75</span></div>
+                    </th>
+                    <th scope="col" data-column="10" data-rank-number-minimum="88" data-rank-number-standard="100"
+                        data-rank-number-maximum="125" data-rank-abbreviation="Un" data-rank-name="Unearthly">
+                        <div><span>Un</span> <span>Unearthly</span> <span>100</span></div>
+                    </th>
+                    <th scope="col" data-column="11" data-rank-number-minimum="126" data-rank-number-standard="150"
+                        data-rank-number-maximum="175" data-rank-abbreviation="ShX" data-rank-name="Shift-X">
+                        <div><span>ShX</span> <span>Shift-X</span> <span>150</span></div>
+                    </th>
+                    <th scope="col" data-column="12" data-rank-number-minimum="176" data-rank-number-standard="200"
+                        data-rank-number-maximum="350" data-rank-abbreviation="ShY" data-rank-name="Shift-Y">
+                        <div><span>ShY</span> <span>Shift-Y</span> <span>200</span></div>
+                    </th>
+                    <th scope="col" data-column="13" data-rank-number-minimum="351" data-rank-number-standard="500"
+                        data-rank-number-maximum="999" data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">
+                        <div><span>ShZ</span> <span>Shift-Z</span> <span>500</span></div>
+                    </th>
+                    <th scope="col" data-column="14" data-rank-number-minimum="1000" data-rank-number-standard="1000"
+                        data-rank-number-maximum="1000" data-rank-abbreviation="CL1000" data-rank-name="Class 1000">
+                        <div><span>CL1000</span> <span>Class 1000</span> <span>1000</span></div>
+                    </th>
+                    <th scope="col" data-column="15" data-rank-number-minimum="3000" data-rank-number-standard="3000"
+                        data-rank-number-maximum="3000" data-rank-abbreviation="CL3000" data-rank-name="Class 3000">
+                        <div><span>CL3000</span> <span>Class 3000</span> <span>3000</span></div>
+                    </th>
+                    <th scope="col" data-column="16" data-rank-number-minimum="5000" data-rank-number-standard="5000"
+                        data-rank-number-maximum="5000" data-rank-abbreviation="CL5000" data-rank-name="Class 5000">
+                        <div><span>CL5000</span> <span>Class 5000</span> <span>5000</span></div>
+                    </th>
+                    <th scope="col" data-column="17" data-rank-number-minimum="∞" data-rank-number-standard="∞"
+                        data-rank-number-maximum="∞" data-rank-abbreviation="B" data-rank-name="Beyond">
+                        <div><span>B</span> <span>Beyond</span> <span>∞</span></div>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col" data-column="0" data-rank-number-minimum="0" data-rank-number-standard="0"
+                        data-rank-number-maximum="0" data-rank-abbreviation="Sh0" data-rank-name="Shift 0">0</th>
+                    <th scope="col" data-column="1" data-rank-number-minimum="1" data-rank-number-standard="2"
+                        data-rank-number-maximum="2" data-rank-abbreviation="Fe" data-rank-name="Feeble">1-2</th>
+                    <th scope="col" data-column="2" data-rank-number-minimum="3" data-rank-number-standard="4"
+                        data-rank-number-maximum="4" data-rank-abbreviation="Pr" data-rank-name="Poor">3-4</th>
+                    <th scope="col" data-column="3" data-rank-number-minimum="5" data-rank-number-standard="6"
+                        data-rank-number-maximum="7" data-rank-abbreviation="Ty" data-rank-name="Typical">5-7</th>
+                    <th scope="col" data-column="4" data-rank-number-minimum="8" data-rank-number-standard="10"
+                        data-rank-number-maximum="15" data-rank-abbreviation="Gd" data-rank-name="Good">8-15</th>
+                    <th scope="col" data-column="5" data-rank-number-minimum="16" data-rank-number-standard="20"
+                        data-rank-number-maximum="25" data-rank-abbreviation="Ex" data-rank-name="Excellent">16-25
+                    </th>
+                    <th scope="col" data-column="6" data-rank-number-minimum="26" data-rank-number-standard="30"
+                        data-rank-number-maximum="36" data-rank-abbreviation="Rm" data-rank-name="Remarkable">26-36
+                    </th>
+                    <th scope="col" data-column="7" data-rank-number-minimum="37" data-rank-number-standard="40"
+                        data-rank-number-maximum="45" data-rank-abbreviation="In" data-rank-name="Incredible">37-45
+                    </th>
+                    <th scope="col" data-column="8" data-rank-number-minimum="46" data-rank-number-standard="50"
+                        data-rank-number-maximum="62" data-rank-abbreviation="Am" data-rank-name="Amazing">46-62
+                    </th>
+                    <th scope="col" data-column="9" data-rank-number-minimum="63" data-rank-number-standard="75"
+                        data-rank-number-maximum="87" data-rank-abbreviation="Mn" data-rank-name="Monstrous">63-87
+                    </th>
+                    <th scope="col" data-column="10" data-rank-number-minimum="88" data-rank-number-standard="100"
+                        data-rank-number-maximum="125" data-rank-abbreviation="Un" data-rank-name="Unearthly">88-125
+                    </th>
+                    <th scope="col" data-column="11" data-rank-number-minimum="126" data-rank-number-standard="150"
+                        data-rank-number-maximum="175" data-rank-abbreviation="ShX" data-rank-name="Shift-X">126-175
+                    </th>
+                    <th scope="col" data-column="12" data-rank-number-minimum="176" data-rank-number-standard="200"
+                        data-rank-number-maximum="350" data-rank-abbreviation="ShY" data-rank-name="Shift-Y">176-350
+                    </th>
+                    <th scope="col" data-column="13" data-rank-number-minimum="351" data-rank-number-standard="500"
+                        data-rank-number-maximum="999" data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">351+
+                    </th>
+                    <th scope="col" data-column="14" data-rank-number-minimum="1000" data-rank-number-standard="1000"
+                        data-rank-number-maximum="1000" data-rank-abbreviation="CL1000" data-rank-name="Class 1000">1000
+                    </th>
+                    <th scope="col" data-column="15" data-rank-number-minimum="3000" data-rank-number-standard="3000"
+                        data-rank-number-maximum="3000" data-rank-abbreviation="CL3000" data-rank-name="Class 3000">3000
+                    </th>
+                    <th scope="col" data-column="16" data-rank-number-minimum="5000" data-rank-number-standard="5000"
+                        data-rank-number-maximum="5000" data-rank-abbreviation="CL5000" data-rank-name="Class 5000">5000
+                    </th>
+                    <th scope="col" data-column="17" data-rank-number-minimum="∞" data-rank-number-standard="∞"
+                        data-rank-number-maximum="∞" data-rank-abbreviation="B" data-rank-name="Beyond">∞</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" data-roll="1">01</th>
+                    <td data-roll="1" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">White</td>
+                    <td data-roll="1" data-result-color="White" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">White</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="2">02-03</th>
+                    <td data-roll="2" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">White</td>
+                    <td data-roll="2" data-result-color="White" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">White</td>
+                    <td data-roll="2" data-result-color="Green" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Green</td>
+                    <td data-roll="2" data-result-color="Green" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Green</td>
+                    <td data-roll="2" data-result-color="Green" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Green</td>
+                    <td data-roll="2" data-result-color="Green" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Green</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="04">04-06</th>
+                    <td data-roll="4" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">White</td>
+                    <td data-roll="4" data-result-color="White" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">White</td>
+                    <td data-roll="4" data-result-color="Green" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Green</td>
+                    <td data-roll="4" data-result-color="Green" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Green</td>
+                    <td data-roll="4" data-result-color="Green" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Green</td>
+                    <td data-roll="4" data-result-color="Green" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Green</td>
+                    <td data-roll="4" data-result-color="Green" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Green</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="07">07-10</th>
+                    <td data-roll="7" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="7" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="7" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="7" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="7" data-result-color="White" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">White</td>
+                    <td data-roll="7" data-result-color="White" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">White</td>
+                    <td data-roll="7" data-result-color="White" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">White</td>
+                    <td data-roll="7" data-result-color="White" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">White</td>
+                    <td data-roll="7" data-result-color="White" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">White</td>
+                    <td data-roll="7" data-result-color="White" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">White</td>
+                    <td data-roll="7" data-result-color="White" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">White</td>
+                    <td data-roll="7" data-result-color="White" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">White</td>
+                    <td data-roll="7" data-result-color="Green" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Green</td>
+                    <td data-roll="7" data-result-color="Green" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Green</td>
+                    <td data-roll="7" data-result-color="Green" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Green</td>
+                    <td data-roll="7" data-result-color="Green" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Green</td>
+                    <td data-roll="7" data-result-color="Green" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Green</td>
+                    <td data-roll="7" data-result-color="Green" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Green</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="11">11-15</th>
+                    <td data-roll="11" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="11" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="11" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="11" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="11" data-result-color="White" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">White</td>
+                    <td data-roll="11" data-result-color="White" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">White</td>
+                    <td data-roll="11" data-result-color="White" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">White</td>
+                    <td data-roll="11" data-result-color="White" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">White</td>
+                    <td data-roll="11" data-result-color="White" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">White</td>
+                    <td data-roll="11" data-result-color="White" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">White</td>
+                    <td data-roll="11" data-result-color="White" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">White</td>
+                    <td data-roll="11" data-result-color="Green" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Green</td>
+                    <td data-roll="11" data-result-color="Green" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Green</td>
+                    <td data-roll="11" data-result-color="Green" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Green</td>
+                    <td data-roll="11" data-result-color="Green" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Green</td>
+                    <td data-roll="11" data-result-color="Green" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Green</td>
+                    <td data-roll="11" data-result-color="Green" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Green</td>
+                    <td data-roll="11" data-result-color="Green" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Green</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="16">16-20</th>
+                    <td data-roll="16" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="16" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="16" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="16" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="16" data-result-color="White" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">White</td>
+                    <td data-roll="16" data-result-color="White" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">White</td>
+                    <td data-roll="16" data-result-color="White" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">White</td>
+                    <td data-roll="16" data-result-color="White" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">White</td>
+                    <td data-roll="16" data-result-color="White" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">White</td>
+                    <td data-roll="16" data-result-color="White" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">White</td>
+                    <td data-roll="16" data-result-color="Green" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Green</td>
+                    <td data-roll="16" data-result-color="Green" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Green</td>
+                    <td data-roll="16" data-result-color="Green" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Green</td>
+                    <td data-roll="16" data-result-color="Green" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Green</td>
+                    <td data-roll="16" data-result-color="Green" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Green</td>
+                    <td data-roll="16" data-result-color="Green" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Green</td>
+                    <td data-roll="16" data-result-color="Green" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Green</td>
+                    <td data-roll="16" data-result-color="Green" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Green</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="21">21-25</th>
+                    <td data-roll="21" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="21" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="21" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="21" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="21" data-result-color="White" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">White</td>
+                    <td data-roll="21" data-result-color="White" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">White</td>
+                    <td data-roll="21" data-result-color="White" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">White</td>
+                    <td data-roll="21" data-result-color="White" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">White</td>
+                    <td data-roll="21" data-result-color="White" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">White</td>
+                    <td data-roll="21" data-result-color="Green" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Green</td>
+                    <td data-roll="21" data-result-color="Green" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Green</td>
+                    <td data-roll="21" data-result-color="Green" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Green</td>
+                    <td data-roll="21" data-result-color="Green" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Green</td>
+                    <td data-roll="21" data-result-color="Green" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Green</td>
+                    <td data-roll="21" data-result-color="Green" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Green</td>
+                    <td data-roll="21" data-result-color="Green" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Green</td>
+                    <td data-roll="21" data-result-color="Green" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Green</td>
+                    <td data-roll="21" data-result-color="Yellow" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Yellow</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="26">26-30</th>
+                    <td data-roll="26" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="26" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="26" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="26" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="26" data-result-color="White" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">White</td>
+                    <td data-roll="26" data-result-color="White" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">White</td>
+                    <td data-roll="26" data-result-color="White" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">White</td>
+                    <td data-roll="26" data-result-color="White" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">White</td>
+                    <td data-roll="26" data-result-color="Green" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Green</td>
+                    <td data-roll="26" data-result-color="Green" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Green</td>
+                    <td data-roll="26" data-result-color="Green" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Green</td>
+                    <td data-roll="26" data-result-color="Green" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Green</td>
+                    <td data-roll="26" data-result-color="Green" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Green</td>
+                    <td data-roll="26" data-result-color="Green" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Green</td>
+                    <td data-roll="26" data-result-color="Green" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Green</td>
+                    <td data-roll="26" data-result-color="Green" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Green</td>
+                    <td data-roll="26" data-result-color="Yellow" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Yellow</td>
+                    <td data-roll="26" data-result-color="Yellow" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Yellow</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="31">31-35</th>
+                    <td data-roll="31" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="31" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="31" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="31" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="31" data-result-color="White" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">White</td>
+                    <td data-roll="31" data-result-color="White" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">White</td>
+                    <td data-roll="31" data-result-color="White" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">White</td>
+                    <td data-roll="31" data-result-color="Green" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Green</td>
+                    <td data-roll="31" data-result-color="Green" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Green</td>
+                    <td data-roll="31" data-result-color="Green" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Green</td>
+                    <td data-roll="31" data-result-color="Green" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Green</td>
+                    <td data-roll="31" data-result-color="Green" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Green</td>
+                    <td data-roll="31" data-result-color="Green" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Green</td>
+                    <td data-roll="31" data-result-color="Green" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Green</td>
+                    <td data-roll="31" data-result-color="Green" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Green</td>
+                    <td data-roll="31" data-result-color="Yellow" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Yellow</td>
+                    <td data-roll="31" data-result-color="Yellow" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Yellow</td>
+                    <td data-roll="31" data-result-color="Yellow" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Yellow</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="36">36-40</th>
+                    <td data-roll="36" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="36" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="36" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="36" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="36" data-result-color="White" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">White</td>
+                    <td data-roll="36" data-result-color="White" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">White</td>
+                    <td data-roll="36" data-result-color="Green" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Green</td>
+                    <td data-roll="36" data-result-color="Green" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Green</td>
+                    <td data-roll="36" data-result-color="Green" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Green</td>
+                    <td data-roll="36" data-result-color="Green" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Green</td>
+                    <td data-roll="36" data-result-color="Green" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Green</td>
+                    <td data-roll="36" data-result-color="Green" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Green</td>
+                    <td data-roll="36" data-result-color="Green" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Green</td>
+                    <td data-roll="36" data-result-color="Yellow" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Yellow</td>
+                    <td data-roll="36" data-result-color="Yellow" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Yellow</td>
+                    <td data-roll="36" data-result-color="Yellow" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Yellow</td>
+                    <td data-roll="36" data-result-color="Yellow" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Yellow</td>
+                    <td data-roll="36" data-result-color="Yellow" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Yellow</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="41">41-45</th>
+                    <td data-roll="41" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="41" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="41" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="41" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="41" data-result-color="White" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">White</td>
+                    <td data-roll="41" data-result-color="Green" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Green</td>
+                    <td data-roll="41" data-result-color="Green" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Green</td>
+                    <td data-roll="41" data-result-color="Green" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Green</td>
+                    <td data-roll="41" data-result-color="Green" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Green</td>
+                    <td data-roll="41" data-result-color="Green" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Green</td>
+                    <td data-roll="41" data-result-color="Green" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Green</td>
+                    <td data-roll="41" data-result-color="Yellow" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Yellow</td>
+                    <td data-roll="41" data-result-color="Yellow" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Yellow</td>
+                    <td data-roll="41" data-result-color="Yellow" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Yellow</td>
+                    <td data-roll="41" data-result-color="Yellow" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Yellow</td>
+                    <td data-roll="41" data-result-color="Yellow" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Yellow</td>
+                    <td data-roll="41" data-result-color="Yellow" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Yellow</td>
+                    <td data-roll="41" data-result-color="Yellow" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Yellow</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="46">46-50</th>
+                    <td data-roll="46" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="46" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="46" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="46" data-result-color="White" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">White</td>
+                    <td data-roll="46" data-result-color="Green" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Green</td>
+                    <td data-roll="46" data-result-color="Green" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Green</td>
+                    <td data-roll="46" data-result-color="Green" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Green</td>
+                    <td data-roll="46" data-result-color="Green" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Green</td>
+                    <td data-roll="46" data-result-color="Green" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Green</td>
+                    <td data-roll="46" data-result-color="Green" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Green</td>
+                    <td data-roll="46" data-result-color="Yellow" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Yellow</td>
+                    <td data-roll="46" data-result-color="Yellow" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Yellow</td>
+                    <td data-roll="46" data-result-color="Yellow" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Yellow</td>
+                    <td data-roll="46" data-result-color="Yellow" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Yellow</td>
+                    <td data-roll="46" data-result-color="Yellow" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Yellow</td>
+                    <td data-roll="46" data-result-color="Yellow" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Yellow</td>
+                    <td data-roll="46" data-result-color="Yellow" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Yellow</td>
+                    <td data-roll="46" data-result-color="Yellow" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Yellow</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="51">51-55</th>
+                    <td data-roll="51" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="51" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="51" data-result-color="White" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">White</td>
+                    <td data-roll="51" data-result-color="Green" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Green</td>
+                    <td data-roll="51" data-result-color="Green" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Green</td>
+                    <td data-roll="51" data-result-color="Green" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Green</td>
+                    <td data-roll="51" data-result-color="Green" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Green</td>
+                    <td data-roll="51" data-result-color="Green" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Green</td>
+                    <td data-roll="51" data-result-color="Green" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Green</td>
+                    <td data-roll="51" data-result-color="Yellow" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Yellow</td>
+                    <td data-roll="51" data-result-color="Yellow" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Yellow</td>
+                    <td data-roll="51" data-result-color="Yellow" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Yellow</td>
+                    <td data-roll="51" data-result-color="Yellow" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Yellow</td>
+                    <td data-roll="51" data-result-color="Yellow" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Yellow</td>
+                    <td data-roll="51" data-result-color="Yellow" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Yellow</td>
+                    <td data-roll="51" data-result-color="Yellow" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Yellow</td>
+                    <td data-roll="51" data-result-color="Yellow" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Yellow</td>
+                    <td data-roll="51" data-result-color="Yellow" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Yellow</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="56">56-60</th>
+                    <td data-roll="56" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="56" data-result-color="White" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">White</td>
+                    <td data-roll="56" data-result-color="Green" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">Green</td>
+                    <td data-roll="56" data-result-color="Green" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Green</td>
+                    <td data-roll="56" data-result-color="Green" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Green</td>
+                    <td data-roll="56" data-result-color="Green" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Green</td>
+                    <td data-roll="56" data-result-color="Green" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Green</td>
+                    <td data-roll="56" data-result-color="Green" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Green</td>
+                    <td data-roll="56" data-result-color="Yellow" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Yellow</td>
+                    <td data-roll="56" data-result-color="Yellow" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Yellow</td>
+                    <td data-roll="56" data-result-color="Yellow" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Yellow</td>
+                    <td data-roll="56" data-result-color="Yellow" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Yellow</td>
+                    <td data-roll="56" data-result-color="Yellow" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Yellow</td>
+                    <td data-roll="56" data-result-color="Yellow" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Yellow</td>
+                    <td data-roll="56" data-result-color="Yellow" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Yellow</td>
+                    <td data-roll="56" data-result-color="Yellow" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Yellow</td>
+                    <td data-roll="56" data-result-color="Yellow" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Yellow</td>
+                    <td data-roll="56" data-result-color="Yellow" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Yellow</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="61">61-65</th>
+                    <td data-roll="61" data-result-color="White" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">White</td>
+                    <td data-roll="61" data-result-color="Green" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">Green</td>
+                    <td data-roll="61" data-result-color="Green" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">Green</td>
+                    <td data-roll="61" data-result-color="Green" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Green</td>
+                    <td data-roll="61" data-result-color="Green" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Green</td>
+                    <td data-roll="61" data-result-color="Green" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Green</td>
+                    <td data-roll="61" data-result-color="Green" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Green</td>
+                    <td data-roll="61" data-result-color="Yellow" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Yellow</td>
+                    <td data-roll="61" data-result-color="Yellow" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Yellow</td>
+                    <td data-roll="61" data-result-color="Yellow" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Yellow</td>
+                    <td data-roll="61" data-result-color="Yellow" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Yellow</td>
+                    <td data-roll="61" data-result-color="Yellow" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Yellow</td>
+                    <td data-roll="61" data-result-color="Yellow" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Yellow</td>
+                    <td data-roll="61" data-result-color="Yellow" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Yellow</td>
+                    <td data-roll="61" data-result-color="Yellow" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Yellow</td>
+                    <td data-roll="61" data-result-color="Yellow" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Yellow</td>
+                    <td data-roll="61" data-result-color="Yellow" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Yellow</td>
+                    <td data-roll="61" data-result-color="Red" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Red</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="66">66-70</th>
+                    <td data-roll="66" data-result-color="Green" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">Green</td>
+                    <td data-roll="66" data-result-color="Green" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">Green</td>
+                    <td data-roll="66" data-result-color="Green" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">Green</td>
+                    <td data-roll="66" data-result-color="Green" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Green</td>
+                    <td data-roll="66" data-result-color="Green" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Green</td>
+                    <td data-roll="66" data-result-color="Green" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Green</td>
+                    <td data-roll="66" data-result-color="Yellow" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Yellow</td>
+                    <td data-roll="66" data-result-color="Yellow" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Yellow</td>
+                    <td data-roll="66" data-result-color="Yellow" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Yellow</td>
+                    <td data-roll="66" data-result-color="Yellow" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Yellow</td>
+                    <td data-roll="66" data-result-color="Yellow" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Yellow</td>
+                    <td data-roll="66" data-result-color="Yellow" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Yellow</td>
+                    <td data-roll="66" data-result-color="Yellow" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Yellow</td>
+                    <td data-roll="66" data-result-color="Yellow" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Yellow</td>
+                    <td data-roll="66" data-result-color="Yellow" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Yellow</td>
+                    <td data-roll="66" data-result-color="Yellow" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Yellow</td>
+                    <td data-roll="66" data-result-color="Red" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Red</td>
+                    <td data-roll="66" data-result-color="Red" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Red</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="71">71-75</th>
+                    <td data-roll="71" data-result-color="Green" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">Green</td>
+                    <td data-roll="71" data-result-color="Green" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">Green</td>
+                    <td data-roll="71" data-result-color="Green" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">Green</td>
+                    <td data-roll="71" data-result-color="Green" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Green</td>
+                    <td data-roll="71" data-result-color="Green" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Green</td>
+                    <td data-roll="71" data-result-color="Yellow" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Yellow</td>
+                    <td data-roll="71" data-result-color="Yellow" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Yellow</td>
+                    <td data-roll="71" data-result-color="Yellow" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Yellow</td>
+                    <td data-roll="71" data-result-color="Yellow" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Yellow</td>
+                    <td data-roll="71" data-result-color="Yellow" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Yellow</td>
+                    <td data-roll="71" data-result-color="Yellow" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Yellow</td>
+                    <td data-roll="71" data-result-color="Yellow" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Yellow</td>
+                    <td data-roll="71" data-result-color="Yellow" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Yellow</td>
+                    <td data-roll="71" data-result-color="Yellow" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Yellow</td>
+                    <td data-roll="71" data-result-color="Yellow" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Yellow</td>
+                    <td data-roll="71" data-result-color="Red" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Red</td>
+                    <td data-roll="71" data-result-color="Red" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Red</td>
+                    <td data-roll="71" data-result-color="Red" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Red</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="76">76-80</th>
+                    <td data-roll="76" data-result-color="Green" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">Green</td>
+                    <td data-roll="76" data-result-color="Green" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">Green</td>
+                    <td data-roll="76" data-result-color="Green" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">Green</td>
+                    <td data-roll="76" data-result-color="Green" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Green</td>
+                    <td data-roll="76" data-result-color="Yellow" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Yellow</td>
+                    <td data-roll="76" data-result-color="Yellow" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Yellow</td>
+                    <td data-roll="76" data-result-color="Yellow" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Yellow</td>
+                    <td data-roll="76" data-result-color="Yellow" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Yellow</td>
+                    <td data-roll="76" data-result-color="Yellow" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Yellow</td>
+                    <td data-roll="76" data-result-color="Yellow" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Yellow</td>
+                    <td data-roll="76" data-result-color="Yellow" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Yellow</td>
+                    <td data-roll="76" data-result-color="Yellow" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Yellow</td>
+                    <td data-roll="76" data-result-color="Yellow" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Yellow</td>
+                    <td data-roll="76" data-result-color="Red" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Red</td>
+                    <td data-roll="76" data-result-color="Red" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Red</td>
+                    <td data-roll="76" data-result-color="Red" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Red</td>
+                    <td data-roll="76" data-result-color="Red" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Red</td>
+                    <td data-roll="76" data-result-color="Red" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Red</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="81">81-85</th>
+                    <td data-roll="81" data-result-color="Green" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">Green</td>
+                    <td data-roll="81" data-result-color="Green" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">Green</td>
+                    <td data-roll="81" data-result-color="Green" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">Green</td>
+                    <td data-roll="81" data-result-color="Yellow" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Yellow</td>
+                    <td data-roll="81" data-result-color="Yellow" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Yellow</td>
+                    <td data-roll="81" data-result-color="Yellow" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Yellow</td>
+                    <td data-roll="81" data-result-color="Yellow" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Yellow</td>
+                    <td data-roll="81" data-result-color="Yellow" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Yellow</td>
+                    <td data-roll="81" data-result-color="Yellow" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Yellow</td>
+                    <td data-roll="81" data-result-color="Yellow" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Yellow</td>
+                    <td data-roll="81" data-result-color="Yellow" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Yellow</td>
+                    <td data-roll="81" data-result-color="Red" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Red</td>
+                    <td data-roll="81" data-result-color="Red" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Red</td>
+                    <td data-roll="81" data-result-color="Red" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Red</td>
+                    <td data-roll="81" data-result-color="Red" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Red</td>
+                    <td data-roll="81" data-result-color="Red" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Red</td>
+                    <td data-roll="81" data-result-color="Red" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Red</td>
+                    <td data-roll="81" data-result-color="Red" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Red</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="86">86-90</th>
+                    <td data-roll="86" data-result-color="Green" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">Green</td>
+                    <td data-roll="86" data-result-color="Green" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">Green</td>
+                    <td data-roll="86" data-result-color="Yellow" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">Yellow</td>
+                    <td data-roll="86" data-result-color="Yellow" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Yellow</td>
+                    <td data-roll="86" data-result-color="Yellow" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Yellow</td>
+                    <td data-roll="86" data-result-color="Yellow" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Yellow</td>
+                    <td data-roll="86" data-result-color="Yellow" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Yellow</td>
+                    <td data-roll="86" data-result-color="Yellow" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Yellow</td>
+                    <td data-roll="86" data-result-color="Yellow" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Yellow</td>
+                    <td data-roll="86" data-result-color="Red" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Red</td>
+                    <td data-roll="86" data-result-color="Red" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Red</td>
+                    <td data-roll="86" data-result-color="Red" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Red</td>
+                    <td data-roll="86" data-result-color="Red" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Red</td>
+                    <td data-roll="86" data-result-color="Red" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Red</td>
+                    <td data-roll="86" data-result-color="Red" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Red</td>
+                    <td data-roll="86" data-result-color="Red" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Red</td>
+                    <td data-roll="86" data-result-color="Red" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Red</td>
+                    <td data-roll="86" data-result-color="Red" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Red</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="91">91-94</th>
+                    <td data-roll="91" data-result-color="Green" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">Green</td>
+                    <td data-roll="91" data-result-color="Yellow" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">Yellow</td>
+                    <td data-roll="91" data-result-color="Yellow" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">Yellow</td>
+                    <td data-roll="91" data-result-color="Yellow" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Yellow</td>
+                    <td data-roll="91" data-result-color="Yellow" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Yellow</td>
+                    <td data-roll="91" data-result-color="Yellow" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Yellow</td>
+                    <td data-roll="91" data-result-color="Yellow" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Yellow</td>
+                    <td data-roll="91" data-result-color="Red" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Red</td>
+                    <td data-roll="91" data-result-color="Red" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Red</td>
+                    <td data-roll="91" data-result-color="Red" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Red</td>
+                    <td data-roll="91" data-result-color="Red" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Red</td>
+                    <td data-roll="91" data-result-color="Red" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Red</td>
+                    <td data-roll="91" data-result-color="Red" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Red</td>
+                    <td data-roll="91" data-result-color="Red" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Red</td>
+                    <td data-roll="91" data-result-color="Red" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Red</td>
+                    <td data-roll="91" data-result-color="Red" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Red</td>
+                    <td data-roll="91" data-result-color="Red" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Red</td>
+                    <td data-roll="91" data-result-color="Red" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Red</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="95">95-97</th>
+                    <td data-roll="95" data-result-color="Yellow" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">Yellow</td>
+                    <td data-roll="95" data-result-color="Yellow" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">Yellow</td>
+                    <td data-roll="95" data-result-color="Yellow" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">Yellow</td>
+                    <td data-roll="95" data-result-color="Yellow" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Yellow</td>
+                    <td data-roll="95" data-result-color="Yellow" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Yellow</td>
+                    <td data-roll="95" data-result-color="Red" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Red</td>
+                    <td data-roll="95" data-result-color="Red" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Red</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="98">98-99</th>
+                    <td data-roll="98" data-result-color="Yellow" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">Yellow</td>
+                    <td data-roll="98" data-result-color="Yellow" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">Yellow</td>
+                    <td data-roll="98" data-result-color="Yellow" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">Yellow</td>
+                    <td data-roll="98" data-result-color="Red" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Red</td>
+                    <td data-roll="98" data-result-color="Red" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Red</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-roll="10">100</th>
+                    <td data-roll="100" data-result-color="Red" data-column="0" data-rank-number="0"
+                        data-rank-abbreviation="Sh0" data-rank-name="Shift 0">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="1" data-rank-number="1"
+                        data-rank-abbreviation="Fe" data-rank-name="Feeble">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="2" data-rank-number="3"
+                        data-rank-abbreviation="Pr" data-rank-name="Poor">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="3" data-rank-number="5"
+                        data-rank-abbreviation="Ty" data-rank-name="Typical">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="4" data-rank-number="8"
+                        data-rank-abbreviation="Gd" data-rank-name="Good">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="5" data-rank-number="16"
+                        data-rank-abbreviation="Ex" data-rank-name="Excellent">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="6" data-rank-number="26"
+                        data-rank-abbreviation="Rm" data-rank-name="Remarkable">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="7" data-rank-number="37"
+                        data-rank-abbreviation="In" data-rank-name="Incredible">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="8" data-rank-number="46"
+                        data-rank-abbreviation="Am" data-rank-name="Amazing">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="9" data-rank-number="63"
+                        data-rank-abbreviation="Mn" data-rank-name="Monstrous">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="10" data-rank-number="88"
+                        data-rank-abbreviation="Un" data-rank-name="Unearthly">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="11" data-rank-number="126"
+                        data-rank-abbreviation="ShX" data-rank-name="Shift-X">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="12" data-rank-number="176"
+                        data-rank-abbreviation="ShY" data-rank-name="Shift-Y">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="13" data-rank-number="351"
+                        data-rank-abbreviation="ShZ" data-rank-name="Shift-Z">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="14" data-rank-number="1000"
+                        data-rank-abbreviation="CL1000" data-rank-name="Class 1000">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="15" data-rank-number="3000"
+                        data-rank-abbreviation="CL3000" data-rank-name="Class 3000">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="16" data-rank-number="5000"
+                        data-rank-abbreviation="CL5000" data-rank-name="Class 5000">Red</td>
+                    <td data-roll="100" data-result-color="Red" data-column="17" data-rank-number="∞"
+                        data-rank-abbreviation="B" data-rank-name="Beyond">Red</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>
+            <a href="#top">Back to top</a>
+        </p>
+        <p>
+            <small>Everything Marvel and MSHRPG is ®™© current rights holders, current year. Used for educational purposes
+            only.</small>
+        </p>
+    </footer>
+</body>
+
+</html>
