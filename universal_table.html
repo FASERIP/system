@@ -63,11 +63,11 @@
             font-size: x-small;
         }
 
-        thead:first-of-type th span:first-of-type {
+        table:first-of-type thead th span:first-of-type {
             font-size: x-small;
         }
 
-        thead:first-of-type th span:nth-of-type(2) {
+        table:first-of-type thead th span:nth-of-type(2) {
             font-size: xx-large;
         }
 
@@ -75,7 +75,7 @@
             background-color: white;
         }
 
-        tbody:nth-of-type(2) td[data-result-color="White"] {
+        table:nth-of-type(2) tbody td[data-result-color="White"] {
             color: white;
         }
 
@@ -84,7 +84,7 @@
             color: white;
         }
 
-        tbody:nth-of-type(2) td[data-result-color="Green"] {
+        table:nth-of-type(2) tbody td[data-result-color="Green"] {
             color: green;
         }
 
@@ -92,7 +92,7 @@
             background-color: yellow;
         }
 
-        tbody:nth-of-type(2) td[data-result-color="Yellow"] {
+        table:nth-of-type(2) tbody td[data-result-color="Yellow"] {
             color: yellow;
         }
 
@@ -101,41 +101,41 @@
             color: white;
         }
 
-        tbody:nth-of-type(2) td[data-result-color="Red"] {
+        table:nth-of-type(2) tbody td[data-result-color="Red"] {
             color: red;
         }
 
         table:first-of-type thead tr:nth-of-type(2) th,
-        tbody:nth-of-type(2) tr:nth-child(3n) [data-result-color="White"],
-        table:first-of-type tbody:nth-of-type(2) tr:nth-child(3n) th {
+        table:nth-of-type(2) tbody tr:nth-child(3n) [data-result-color="White"],
+        table:nth-of-type(2) tbody tr:nth-child(3n) th {
             background-color: lightgrey;
         }
 
-        tbody:nth-of-type(2) tr:nth-child(3n) td[data-result-color="White"] {
+        table:nth-of-type(2) tbody tr:nth-child(3n) td[data-result-color="White"] {
             color: lightgrey
         }
 
-        tbody:nth-of-type(2) tr:nth-child(3n) [data-result-color="Green"] {
+        table:nth-of-type(2) tbody tr:nth-child(3n) [data-result-color="Green"] {
             background-color: darkgreen;
         }
 
-        tbody:nth-of-type(2) tr:nth-child(3n) td[data-result-color="Green"] {
+        table:nth-of-type(2) tbody tr:nth-child(3n) td[data-result-color="Green"] {
             color: darkgreen;
         }
 
-        tbody:nth-of-type(2) tr:nth-child(3n) [data-result-color="Yellow"] {
+        table:nth-of-type(2) tbody tr:nth-child(3n) [data-result-color="Yellow"] {
             background-color: gold;
         }
 
-        tbody:nth-of-type(2) tr:nth-child(3n) td[data-result-color="Yellow"] {
+        table:nth-of-type(2) tbody tr:nth-child(3n) td[data-result-color="Yellow"] {
             color: gold;
         }
 
-        tbody:nth-of-type(2) tr:nth-child(3n) [data-result-color="Red"] {
+        table:nth-of-type(2) tbody tr:nth-child(3n) [data-result-color="Red"] {
             background-color: crimson;
         }
 
-        tbody:nth-of-type(2) tr:nth-child(3n) td[data-result-color="Red"] {
+        table:nth-of-type(2) tbody tr:nth-child(3n) td[data-result-color="Red"] {
             color: crimson;
         }
     </style>
@@ -164,7 +164,7 @@
     </header>
     <main>
         <table>
-            <caption>Universal Table</caption>
+            <caption>Result Table</caption>
             <thead>
                 <tr>
                     <th scope="col">Result</th>
@@ -400,6 +400,9 @@
                         data-column-name="Kill" data-column-ability="Endurance">No</td>
                 </tr>
             </tbody>
+        </table>
+        <table>
+            <caption>Universal Table</caption>
             <thead>
                 <tr>
                     <th scope="col" rowspan="2">Rank</th>
