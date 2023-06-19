@@ -8,6 +8,7 @@
     <style>
         body {
             font-family: sans-serif;
+            background-color: white;
         }
 
         body * {
@@ -17,6 +18,30 @@
         body>header,
         body>main {
             padding: 1ex 1em;
+        }
+
+        dt::after {
+            content: ':';
+        }
+
+        dd>dl {
+            margin-left: 4em;
+        }
+
+        dd,
+        dt {
+            margin-left: 3em;
+        }
+
+        p {
+            margin-left: 4em;
+            max-width: 52em;
+            text-align:justify;
+            text-indent: -1em;
+        }
+
+        dd>dl {
+            margin-left: 4em;
         }
 
         table {
@@ -75,7 +100,8 @@
             background-color: white;
         }
 
-        table:nth-of-type(2) tbody td[data-result-color="White"] {
+        table:nth-of-type(2) tbody td[data-result-color="White"],
+        caption {
             color: white;
         }
 
@@ -105,7 +131,7 @@
             color: red;
         }
 
-        table:first-of-type thead tr:nth-of-type(2) th,
+        table thead tr:nth-of-type(2) th,
         table:nth-of-type(2) tbody tr:nth-child(3n) [data-result-color="White"],
         table:nth-of-type(2) tbody tr:nth-child(3n) th {
             background-color: lightgrey;
