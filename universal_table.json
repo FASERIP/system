@@ -8,7 +8,13 @@
           "Green": 66,
           "Yellow": 95,
           "Red": 100,
-          "Note": "Minimum Column Shift"
+          "Note": "Minimum Column Shift",
+          "Encounters": {
+            "White": "Rampage",
+            "Green": "Vendetta",
+            "Yellow": "Organized Crime",
+            "Red": "Catastrophe"
+          }
         },
         "Feeble": {
           "Minimum": 1,
@@ -16,7 +22,13 @@
           "Abbreviation": "Fe",
           "Green": 61,
           "Yellow": 91,
-          "Red": 100
+          "Red": 100,
+          "Encounters": {
+            "White": "Rampage",
+            "Green": "Vendetta",
+            "Yellow": "Catastrophe",
+            "Red": "Organized Crime"
+          }
         },
         "Poor": {
           "Minimum": 3,
@@ -24,7 +36,13 @@
           "Abbreviation": "Pr",
           "Green": 56,
           "Yellow": 86,
-          "Red": 100
+          "Red": 100,
+          "Encounters": {
+            "White": "No Encounter",
+            "Green": "No Encounter",
+            "Yellow": "Daily Life",
+            "Red": "Petty Crime"
+          }
         },
         "Typical": {
           "Minimum": 5,
@@ -32,7 +50,13 @@
           "Abbreviation": "Ty",
           "Green": 51,
           "Yellow": 81,
-          "Red": 98
+          "Red": 98,
+          "Encounters": {
+            "White": "No Encounter",
+            "Green": "Daily Life",
+            "Yellow": "Petty Crime",
+            "Red": "Burglary"
+          }
         },
         "Good": {
           "Minimum": 8,
@@ -40,7 +64,13 @@
           "Abbreviation": "Gd",
           "Green": 46,
           "Yellow": 76,
-          "Red": 98
+          "Red": 98,
+          "Encounters": {
+            "White": "No Encounter",
+            "Green": "Daily Life",
+            "Yellow": "Petty Crime",
+            "Red": "Robbery"
+          }
         },
         "Excellent": {
           "Minimum": 16,
@@ -48,7 +78,13 @@
           "Abbreviation": "Ex",
           "Green": 41,
           "Yellow": 71,
-          "Red": 95
+          "Red": 95,
+          "Encounters": {
+            "White": "Daily Life",
+            "Green": "No Encounter",
+            "Yellow": "Petty Crime",
+            "Red": "Burglary"
+          }
         },
         "Remarkable": {
           "Minimum": 26,
@@ -56,7 +92,13 @@
           "Abbreviation": "Rm",
           "Green": 36,
           "Yellow": 66,
-          "Red": 95
+          "Red": 95,
+          "Encounters": {
+            "White": "Daily Life",
+            "Green": "No Encounter",
+            "Yellow": "Petty Crime",
+            "Red": "Robbery"
+          }
         },
         "Incredible": {
           "Minimum": 37,
@@ -64,7 +106,13 @@
           "Abbreviation": "In",
           "Green": 31,
           "Yellow": 61,
-          "Red": 91
+          "Red": 91,
+          "Encounters": {
+            "White": "Petty Crime",
+            "Green": "No Encounter",
+            "Yellow": "Daily Life",
+            "Red": "Vendetta"
+          }
         },
         "Amazing": {
           "Minimum": 46,
@@ -72,7 +120,13 @@
           "Abbreviation": "Am",
           "Green": 26,
           "Yellow": 56,
-          "Red": 91
+          "Red": 91,
+          "Encounters": {
+            "White": "Rampage",
+            "Green": "Petty Crime",
+            "Yellow": "Daily Life",
+            "Red": "No Encounter"
+          }
         },
         "Monstrous": {
           "Minimum": 63,
@@ -80,7 +134,13 @@
           "Abbreviation": "Mn",
           "Green": 21,
           "Yellow": 51,
-          "Red": 86
+          "Red": 86,
+          "Encounters": {
+            "White": "Burglary",
+            "Green": "Robbery",
+            "Yellow": "Petty Crime",
+            "Red": "Daily Life"
+          }
         },
         "Unearthly": {
           "Minimum": 88,
@@ -88,7 +148,13 @@
           "Abbreviation": "Un",
           "Green": 16,
           "Yellow": 46,
-          "Red": 86
+          "Red": 86,
+          "Encounters": {
+            "White": "Organized Crime",
+            "Green": "Burglary",
+            "Yellow": "Robbery",
+            "Red": "Petty Crime"
+          }
         },
         "Shift X": {
           "Minimum": 126,
@@ -96,7 +162,14 @@
           "Abbreviation": "Sh0",
           "Green": 11,
           "Yellow": 41,
-          "Red": 81
+          "Red": 81,
+          "Note": "Maximum Encounter Column Shift",
+          "Encounters": {
+            "White": "No Encounter",
+            "Green": "Organized Crime",
+            "Yellow": "Burglary",
+            "Red": "Rampage"
+          }
         },
         "Shift Y": {
           "Minimum": 176,
@@ -292,6 +365,32 @@
           "Yellow": "No",
           "Red": "No",
           "Abbreviation": "Ki"
+        }
+      },
+      "Encounters": {
+        "Base Rank": "Good",
+        "Column Shifts": {
+          "Hero has at least one ability rank above Incredible": "+1CS",
+          "Hero has at least one Ability rank above Amazing.": "+1CS (Cumulative with above)",
+          "Hero has over 200 Karma on hand.": "+1CS",
+          "Hero has less than 20 Karma on hand.": "-1CS",
+          "Hero failed (lost Karma) in the last encounter.": "+1CS",
+          "Hero succeeded (gained Karma) in the last encounter.": "-1CS",
+          "More than one hero is involved.": "+1CS",
+          "More than three heroes are involved.": "+1CS (Cumulative with above)",
+          "Everything is going the hero's way.": "+2CS",
+          "Hero is low on Karma and heading for a big fight.": "-2CS",
+          "Judge's Discretion (Situational)": "-2CS, -1CS, +1CS or +2CS"
+        },
+        "Types": {
+          "Daily Life": "Small actions that usually wil not involve any fighting.",
+          "Petty Crimes": "Petty crime, street crime, and youth gangs These crimes are small stuff in the nature of the universe ,but important to the people involved.",
+          "Robberies": "Thefts from people, in which lives may be threatened. Muggings and hostage situations for profit are included in this category.",
+          "Burglaries": "Theft of property in which threatening lives is not a prime factor. Break-ins, thefts, and arson all fall into this general category.",
+          "Rampage": "Widespread destruction without the motivation of profit. Rampages are often (but not always) the province of powerful villains.",
+          "Vendetta": "A grudge match, the superpowered slugfest at its most basic.",
+          "Organized Crime": "Can involve any of the lower crimes, with a twist; someone higher up is doing the planning.",
+          "Catastrophes": "Crimes and actions that threaten the well-being of the city and its people: Alien invasions!...Deadly Plagues!...Widespread fires!"
         }
       }
     }
