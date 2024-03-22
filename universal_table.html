@@ -7,64 +7,60 @@
     <title>TSR Marvel Super Heroes RPG Advanced — Universal Table</title>
     <style>
         body {
+            margin: 0;
             font-family: sans-serif;
             background-color: white;
+            font-size: 0.75cqw;
         }
 
         body * {
             box-sizing: border-box;
         }
 
-        body>header,
+        body>header {
+            height: 0;
+            padding: 0;
+            margin: 0;
+            border: none;
+            font-size: 0;
+        }
+
+        body>header>h1 {
+            font-size: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
         body>main {
-            padding: 1ex 1em;
-        }
-
-        dt::after {
-            content: ':';
-        }
-
-        dd>dl {
-            margin-left: 4em;
-        }
-
-        dd,
-        dt {
-            margin-left: 3em;
-        }
-
-        p {
-            margin-left: 4em;
-            max-width: 52em;
-            text-align:justify;
-            text-indent: -1em;
-        }
-
-        dd>dl {
-            margin-left: 4em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1cqh 1cqw;
+            height: 100vh;
         }
 
         table {
             width: 100%;
-            max-width: 96vw;
+            max-width: 96cqw;
             table-layout: fixed;
             border-spacing: 0;
             border-collapse: collapse;
-            margin: auto;
+            margin: 0;
         }
 
         th,
         td {
-            border: 2px solid black;
+            border: 0.175cqi solid black;
             text-align: center;
         }
 
         th {
-            padding: 0.25ex 0.15em 0.25ex 0.15em;
+            padding: 0.5cqh 0.125cqw;
         }
 
         td {
-            padding: 0.5ex 0.5em 0.5ex 0.5em;
+            padding: 0.5cqh 0.5cqw;
         }
 
         th span {
@@ -75,25 +71,25 @@
         thead tr:first-of-type th div {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
-            min-height: 12ex;
+            min-height: 2cqh;
         }
 
         thead th span:first-of-type {
-            font-size: large;
+            font-size: 1.2cqw;
         }
 
         thead th span:nth-of-type(2) {
-            font-size: x-small;
+            font-size: 0.5cqw;
         }
 
         table:first-of-type thead th span:first-of-type {
-            font-size: x-small;
+            font-size: 0.5cqw;
         }
 
         table:first-of-type thead th span:nth-of-type(2) {
-            font-size: xx-large;
+            font-size: 2.75cqw;
         }
 
         [data-result-color="White"] {
@@ -103,6 +99,12 @@
         table:nth-of-type(2) tbody td[data-result-color="White"],
         caption {
             color: white;
+        }
+
+        header {
+            font-size: 0;
+            margin: 0;
+            padding: 0;
         }
 
         [data-result-color="Green"] {
