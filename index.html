@@ -25,24 +25,27 @@
             content: ':';
         }
 
-        dd>dl {
-            margin-left: 4em;
+        dl {
+            display: grid;
+            grid-template-columns: max-content auto;
+            gap: 2ex 1ch;
         }
 
-        dd,
         dt {
-            margin-left: 3em;
+            grid-column: 1;
+            font-weight: bolder;
         }
+
+        dd {
+            grid-column: 2;
+        }
+
 
         p {
             margin-left: 4em;
             max-width: 52em;
-            text-align:justify;
+            text-align: justify;
             text-indent: -1em;
-        }
-
-        dd>dl {
-            margin-left: 4em;
         }
 
         table {
@@ -1066,7 +1069,7 @@
         each other.
         <dl>
             <dt>Initiative Modifier</dt>
-            <dd>Each side adds to its initiative mil a modifier based upon the highest Intuition on that side. This may
+            <dd>Each side adds to its initiative roll a modifier based upon the highest Intuition on that side. This may
                 allow a side with a low roll to gain initiative. A roll of "1" is always considered to be a "1." The
                 initiative modifier is based on the character's rank number:</dd>
             <dt>Changing Actions</dt>
@@ -1211,7 +1214,7 @@
                     <td>Remarkable intensity</td>
                 </tr>
                 <tr>
-                    <th>Making 2 attacks/round</th>
+                    <th>Making 3 attacks/round</th>
                     <td>Amazing intensity</td>
                 </tr>
             </tbody>
@@ -1495,7 +1498,7 @@
                 </tr>
                 <tr>
                     <th>Slickness of ordinary concrete</th>
-                    <td></td>
+                    <td>Feeble Intensity</td>
                 </tr>
                 <tr>
                     <th>Slickness of ordinary brickwork</th>

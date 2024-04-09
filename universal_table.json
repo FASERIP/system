@@ -1,6 +1,191 @@
 {
+  "Game System": {
+    "Meta": {
+      "Name": "Marvel Superheroes RPG",
+      "Version": "2nd Edition/Advanced",
+      "Year": "1986",
+      "By": "TSR, Inc."
+    },
+    "Abilities": {
+      "Primary": {
+        "Fighting": {
+          "Description": "A measure of raw combat ability. Used to determine if the character lands a blow in hand-to-hand combat, evades blunt attacks, and succeeds in multiple combat attacks or other feats involving hand-to-hand combat."
+        },
+        "Agility": {
+          "Description": "A measure of dexterity and nimbleness. Used to determine if the character hits with a thrown or aimed weapon, dodges missile attacks, catches objects, handles vehicles, and determines the secondary ability known as Health."
+        },
+        "Strength": {
+          "Description": "A measure of physical muscle power. Used to determine damage inflicted in slugfest combat, success and damage in wrestling combat and other maneuvers, destruction of materials, lifting heavy objects, and the secondary ability known as Health."
+        },
+        "Endurance": {
+          "Description": "A measure of personal toughness and physical resistance. Used to determine normal moving speed, success in charging attacks, avoiding the effects of disease, poison, and gas, performing actions over a long period of time, resisting effects of Slams, Stuns, and Kill results, and the amount of Health regained by a wounded individual."
+        },
+        "Reason": {
+          "Description": "A measure of intelligence and the capacity for logical thought. Used to determine the character's success in building things, understanding unknown technology and languages, and the secondary ability known as Karma."
+        },
+        "Intuition": {
+          "Description": "A measure of wisdom, wits, common sense, and battle reflexes. Used to discover clues, determine initiative in combat, detect hidden or dangerous items, resist effects of emotion control powers, spells, and abilities, and the secondary ability known as Karma."
+        },
+        "Psyche": {
+          "Description": "A measure of mental strength and willpower. Used to show resistance to mental and will-dominating attacks, resistance to magical attacks, determine initial magical abilities for characters who wield magic, and the secondary ability known as Karma."
+        }
+      },
+      "Secondary": {
+        "Health": {
+          "Description": "Used to determine the amount of physical damage the character can absorb before losing consciousness and potentially dying. Recovered after damage is taken, and regained through normal healing by the Endurance rank number of points per day."
+        },
+        "Karma": {
+          "Description": "Used by the hero as a measure of experience, allowing the hero to perform actions that may otherwise be impossible. Gained through performing heroic acts and lost through performing selfish acts. May be spent to modify die rolls, stay alive, build things, use magical abilities, and raise ability ranks through advancement."
+        },
+        "Resources": {
+          "Description": "A measure of how wealthy a character is, and how the character may use that wealth. Used to determine if a character can afford a particular item or service."
+        },
+        "Popularity": {
+          "Description": "A measure of the character's reputation in their normal environment. Used to determine reactions of large groups of people and neutral NPCs, and to gain favors, information, and equipment from Contacts."
+        }
+      },
+      "Special": {
+        "Powers": {
+          "Description": "Super-human abilities possessed by individual heroes and villains. Used to perform actions above and beyond the limits of normal mortals."
+        },
+        "Talents": {
+          "Description": "Non-super-human abilities that may be possessed by characters. Used to perform specialized actions at a specific benefit."
+        },
+        "Contacts": {
+          "Description": "Represent social, political, and personal friends and allies through whom the character may gain information and equipment. Contacts are considered as Friendly to the character for purposes of determining reactions."
+        }
+      }
+    },
+    "FEATS": {
+      "Types": {
+        "Ability FEAT": "Those that rely on one of the seven primary abilities (Fighting, Agility, Strength, Endurance, Reason, Intuition, and Psyche). These FEATs may be raised or lowered by Talents or the existing situation.",
+        "Power FEAT": "Those that rely on one the hero's individual Powers: a character with Water Control of Amazing checks on the Amazing column to determine success.",
+        "Talent FEAT": "Those that rely on the hero's Talents, where the Talent modifies a specific ability for FEATs.",
+        "Popularity FEAT": "Those used in social interaction, and use the Popularity rank, and may be modified by Contacts.",
+        "Resource FEAT": "Used in connection with the character's Resource rank, and determine if the character can afford a specific item or piece of equipment."
+      },
+      "Intensity Rank versus Ability Rank": {
+        "Three or More Lower": "Usually Automatic Success except special circumstances.",
+        "Lower": "Green",
+        "Equal": "Yellow",
+        "Greater": "Red",
+        "Two or More Greater": "May be Impossible.  Resource FEAT aways Impossible"
+      },
+      "Intensities": {
+        "Fighting": {
+          "Remarkable": "Making 2 attacks/round",
+          "Amazing": "Making 3 attacks/round"
+        },
+        "Agility": {
+          "Feeble": "Catching a falling object",
+          "Good": "Walking a balance beam",
+          "Excellent": "Using a dodge maneuver against bullets",
+          "Remarkable": "Walking a tightrope",
+          "Incredible": "Attempting to dodge bursts of bullets",
+          "Amazing": "Catching arrows in flight",
+          "Monstrous": "Dodging laser fire of energy weapons",
+          "Unearthly": "Catching bullets in flight"
+        },
+        "Strength": {
+          "Feeble": "Lifting up to 50 lbs.",
+          "Poor": "Lifting 51-100 lbs.",
+          "Typical": "Lifting 101-200 lbs.",
+          "Good": "Lifting 201-400 lbs.",
+          "Excellent": "Lifting 401-800 lbs.",
+          "Remarkable": "Lifting 801-2000 lbs. (1 ton)",
+          "Incredible": "Lifting 1-10 tons",
+          "Amazing": "Lifting 10-50 tons",
+          "Monstrous": "Lifting 50-80 tons",
+          "Unearthly": "Lifting 80-100 tons",
+          "Shift-X": "Lifting 100+ tons"
+        },
+        "Endurance": {
+          "Feeble": "Air pollution alert",
+          "Typical": "Tear gas",
+          "Good": "Snake venom",
+          "Excellent": "Spider venom",
+          "Unearthly": "Exposure to vacuum"
+        },
+        "Reason": {
+          "Feeble": "Simple machines",
+          "Poor": "Complex machines",
+          "Typical": "Communication by gestures",
+          "Good": "Appliances",
+          "Excellent": "Simple Electronics",
+          "Remarkable": "Common Vehicles",
+          "Incredible": "Computer design and programming",
+          "Amazing": "Ability-modifying devices",
+          "Monstrous": "Stardrive, Time Travel"
+        },
+        "Intuition": {
+          "Poor": "Obvious items (number of people present, condition of room)",
+          "Excellent": "Detail work (position of objects, things missing or added)",
+          "Incredible": "Discovering “typical” hidden door or secret passage",
+          "Monstrous": "Sense 'wrongness' about an area, person, or object",
+          "Unearthly": "Sense presence of others that may be hidden, concealed, invisible, or astral"
+        },
+        "Psyche": {
+          "Good": "Intensity of standard hypnosis and mesmerism",
+          "Remarkable": "Intensity of standard mind control devices",
+          "Incredible": "Intensity of standard terran magic",
+          "Monstrous": "Intensity of standard Asgardian magic"
+        },
+        "Other Intensities": {
+          "A single match": "Feeble",
+          "Campfire": "Poor",
+          "Burning room": "Typical",
+          "Burning house": "Excellent",
+          "Burning warehouse and supplies": "Remarkable",
+          "Burning non-explosive chemicals": "Incredible",
+          "Inside of a blast furnace": "Amazing",
+          "Burning explosive chemicals": "Monstrous",
+          "Interor of a volcano": "Unearthly",
+          "Surface of a star": "Class 1000",
+          "Common Cold": "Feeble",
+          "Common Flu": "Good",
+          "Radiation, Ancient A-bomb blast": "Feeble",
+          "Radiation, Recent A-bomb blast": "Excellent",
+          "Interior of an active nuclear reactor": "Amazing",
+          "Radiation of a vial of plutonium": "Incredible",
+          "Radiation of A-bomb blast": "Monstrous",
+          "Slickness of ordinary concrete": "Feeble",
+          "Slickness of ordinary brickwork": "Feeble",
+          "Slickness of glass and steel": "Typical",
+          "Slickness of polished steel alloys": "Good",
+          "Slickness of surface covered with ice": "Excellent",
+          "Slickness of surface covered with oil": "Remarkable",
+          "Slickness of non-stick surfaces": "Incredible",
+          "Slickness of frictionless surfaces": "Class 1000",
+          "Darkness under night conditions": "Typical",
+          "Darkness under dark conditions": "Excellent",
+          "Darkness under “typical” Darkforce": "Remarkable",
+          "Vision through normal fog": "Typical",
+          "Effects of normal rainshower": "Good",
+          "Effects of normal thundershower": "Remarkable",
+          "Effects of normal thunderstorm": "Incredible",
+          "Effects of high winds": "Incredible",
+          "Effects of normal tornado": "Amazing",
+          "Effects of normal hurricane": "Unearthly",
+          "Heat, 90 degrees F": "Good",
+          "Heat, 120 degrees F": "Excellent",
+          "Heat, 150 degrees F": "Remarkable",
+          "Cold, 30 degrees F": "Good",
+          "Cold, 0 degrees F": "Excellent",
+          "Cold, -30 degrees F": "Remarkable",
+          "Cold, interplanetary space": "Monstrous",
+          "Corrosive, mild acid": "Good",
+          "Corrosive, standard acid": "Excellent",
+          "Corrosive, concentrated acid": "Incredible+",
+          "Stunning, ordinary house current": "Excellent",
+          "Stunning, “typical” protection devices": "Remarkable",
+          "Stunning, Lightning bolts": "Incredible",
+          "Stunning, High tension wires": "Amazing"
+        }
+        
+      }
+    },
     "Universal Table": {
-      "Rank": {
+      "Ranks": {
         "Shift 0": {
           "Minimum": 0,
           "Standard": 0,
@@ -23,6 +208,15 @@
           "Green": 61,
           "Yellow": 91,
           "Red": 100,
+          "Abilities": {
+            "Fighting": "No training or ability",
+            "Agility": "Physically limited",
+            "Strength": "Able to press up to 50 lbs.",
+            "Endurance": "Reduced or impaired ability",
+            "Reason": "Couch potato. Good grasp of native language, simple machines",
+            "Intuition": "Unaware of surroundings, limited or impaired senses",
+            "Psyche": "Easily dominated or programmed"
+          },
           "Encounters": {
             "White": "Rampage",
             "Green": "Vendetta",
@@ -37,6 +231,15 @@
           "Green": 56,
           "Yellow": 86,
           "Red": 100,
+          "Abilities": {
+            "Fighting": "Normal human ability",
+            "Agility": "Clumsy, inaccurate",
+            "Strength": "Able to press up to 100 lbs.",
+            "Endurance": "Minimal ability or exercise",
+            "Reason": "Limited exposure to technology, understands complex machines",
+            "Intuition": "A little slow on the uptake TY Normal human levels",
+            "Psyche": "Young, untrained, or hampered in sense of will"
+          },
           "Encounters": {
             "White": "No Encounter",
             "Green": "No Encounter",
@@ -51,11 +254,23 @@
           "Green": 51,
           "Yellow": 81,
           "Red": 98,
+          "Abilities": {
+            "Fighting": "",
+            "Agility": "",
+            "Strength": "",
+            "Endurance": "",
+            "Reason": "",
+            "Intuition": "",
+            "Psyche": ""
+          },
           "Encounters": {
-            "White": "No Encounter",
-            "Green": "Daily Life",
-            "Yellow": "Petty Crime",
-            "Red": "Burglary"
+            "Fighting": "Minimal training or natural ability",
+            "Agility": "Normal human reactions",
+            "Strength": "Able to press up to 200 lbs.",
+            "Endurance": "Occasionally exercise",
+            "Reason": "Operate 1980's technology",
+            "Intuition": "Above average intuition",
+            "Psyche": "Normal human willpower"
           }
         },
         "Good": {
@@ -65,6 +280,15 @@
           "Green": 46,
           "Yellow": 76,
           "Red": 98,
+          "Abilities": {
+            "Fighting": "Some formal training",
+            "Agility": "Some training in dexterity and accuracy",
+            "Strength": "Able to press up to 400 lbs.",
+            "Endurance": "Moderate exercise",
+            "Reason": "Repair and install 1980's technology, comprehend terran languages",
+            "Intuition": "Fine eye for detail",
+            "Psyche": "Resist ordinary mesmerism"
+          },
           "Encounters": {
             "White": "No Encounter",
             "Green": "Daily Life",
@@ -79,6 +303,15 @@
           "Green": 41,
           "Yellow": 71,
           "Red": 95,
+          "Abilities": {
+            "Fighting": "Regular, formal training",
+            "Agility": "Intensive training in dexterity and/or accuracy",
+            "Strength": "Able to press up to 800 lbs. (Maximum human ability)",
+            "Endurance": "Regular exercise",
+            "Reason": "Modify existing 1980's technology",
+            "Intuition": "Detective skills or background",
+            "Psyche": "Some experience with mental control and/or mystic forces"
+          },
           "Encounters": {
             "White": "Daily Life",
             "Green": "No Encounter",
@@ -93,6 +326,15 @@
           "Green": 36,
           "Yellow": 66,
           "Red": 95,
+          "Abilities": {
+            "Fighting": "Superior talent",
+            "Agility": "Olympic athlete",
+            "Strength": "Able to press up to 2000 lbs (1 ton)",
+            "Endurance": "Intensive exercise",
+            "Reason": "Understand advanced 1980's technology including computer/circuitry design",
+            "Intuition": "Strong empathic sense; gut feeling",
+            "Psyche": "Trained in resisting outside will-dominating forces"
+          },
           "Encounters": {
             "White": "Daily Life",
             "Green": "No Encounter",
@@ -107,6 +349,15 @@
           "Green": 31,
           "Yellow": 61,
           "Red": 91,
+          "Abilities": {
+            "Fighting": "Superior talent with training",
+            "Agility": "Olympic gymnast",
+            "Strength": "Able to press up to 10 tons",
+            "Endurance": "Enhanced abilities",
+            "Reason": "Understand non-terran technologies",
+            "Intuition": "In tune with all surroundings, strong hunches in regard to subjects",
+            "Psyche": "Highly trained, or possessing great strength of will"
+          },
           "Encounters": {
             "White": "Petty Crime",
             "Green": "No Encounter",
@@ -121,6 +372,15 @@
           "Green": 26,
           "Yellow": 56,
           "Red": 91,
+          "Abilities": {
+            "Fighting": "Maximum human potential",
+            "Agility": "Super-human accuracy",
+            "Strength": "Able to press up to 50 tons",
+            "Endurance": "Enhanced and trained abilities",
+            "Reason": "Create leading-edge technologies, such as stardrive or time travel",
+            "Intuition": "Senses beyond all normal limitations",
+            "Psyche": "Indomitable willpower"
+          },
           "Encounters": {
             "White": "Rampage",
             "Green": "Petty Crime",
@@ -135,6 +395,15 @@
           "Green": 21,
           "Yellow": 51,
           "Red": 86,
+          "Abilities": {
+            "Fighting": "Super-human maximum potential",
+            "Agility": "Super-human accuracy and sense of dexterity",
+            "Strength": "Able to press up to 80 tons",
+            "Endurance": "Rarely tires, great fortitude",
+            "Reason": "Improve and modify advanced alien technologies",
+            "Intuition": "Senses beyond all normal limitations",
+            "Psyche": "Intense training in mental powers, experience in wielding those powers"
+          },
           "Encounters": {
             "White": "Burglary",
             "Green": "Robbery",
@@ -149,6 +418,15 @@
           "Green": 16,
           "Yellow": 46,
           "Red": 86,
+          "Abilities": {
+            "Fighting": "Super-human with intensive training",
+            "Agility": "Movement and reactions in a flash, rarely misses",
+            "Strength": "Able to press up to 100+ tons",
+            "Endurance": "Never tires",
+            "Reason": "In effect, IS an alien technology",
+            "Intuition": "In touch with universe, cannot be blindsided",
+            "Psyche": "A closed mind, practically uncontrollable by outside means"
+          },
           "Encounters": {
             "White": "Organized Crime",
             "Green": "Burglary",
@@ -159,7 +437,7 @@
         "Shift X": {
           "Minimum": 126,
           "Standard": 150,
-          "Abbreviation": "Sh0",
+          "Abbreviation": "ShX",
           "Green": 11,
           "Yellow": 41,
           "Red": 81,
@@ -174,7 +452,7 @@
         "Shift Y": {
           "Minimum": 176,
           "Standard": 200,
-          "Abbreviation": "Sh0",
+          "Abbreviation": "ShY",
           "Green": 7,
           "Yellow": 41,
           "Red": 81
@@ -182,7 +460,7 @@
         "Shift Z": {
           "Minimum": 351,
           "Standard": 500,
-          "Abbreviation": "Sh0",
+          "Abbreviation": "ShZ",
           "Green": 4,
           "Yellow": 36,
           "Red": 76,
@@ -191,7 +469,7 @@
         "Class 1000": {
           "Minimum": 1000,
           "Standard": 1000,
-          "Abbreviation": "Sh0",
+          "Abbreviation": "CL1000",
           "Green": 2,
           "Yellow": 36,
           "Red": 76
@@ -213,8 +491,8 @@
           "Red": 66
         },
         "Beyond": {
-          "Minimum": ".inf",
-          "Standard": ".inf",
+          "Minimum": 1e100,
+          "Standard": 1e100,
           "Abbreviation": "B",
           "Green": 2,
           "Yellow": 21,
@@ -395,4 +673,4 @@
       }
     }
   }
-  
+}

@@ -25,24 +25,27 @@
             content: ':';
         }
 
-        dd>dl {
-            margin-left: 4em;
+        dl {
+            display: grid;
+            grid-template-columns: max-content auto;
+            gap: 2ex 1ch;
         }
 
-        dd,
         dt {
-            margin-left: 3em;
+            grid-column: 1;
+            font-weight: bolder;
         }
+
+        dd {
+            grid-column: 2;
+        }
+
 
         p {
             margin-left: 4em;
             max-width: 52em;
-            text-align:justify;
+            text-align: justify;
             text-indent: -1em;
-        }
-
-        dd>dl {
-            margin-left: 4em;
         }
 
         table {
