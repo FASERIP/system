@@ -255,15 +255,6 @@
           "Yellow": 81,
           "Red": 98,
           "Abilities": {
-            "Fighting": "",
-            "Agility": "",
-            "Strength": "",
-            "Endurance": "",
-            "Reason": "",
-            "Intuition": "",
-            "Psyche": ""
-          },
-          "Encounters": {
             "Fighting": "Minimal training or natural ability",
             "Agility": "Normal human reactions",
             "Strength": "Able to press up to 200 lbs.",
@@ -271,6 +262,12 @@
             "Reason": "Operate 1980's technology",
             "Intuition": "Above average intuition",
             "Psyche": "Normal human willpower"
+          },
+          "Encounters": {
+            "White": "No Encounter",
+            "Green": "Daily Life",
+            "Yellow": "Petty Crime",
+            "Red": "Burglary"
           }
         },
         "Good": {
@@ -661,14 +658,15 @@
           "Judge's Discretion (Situational)": "-2CS, -1CS, +1CS or +2CS"
         },
         "Types": {
+          "No Encounter": "Nothing of note",
           "Daily Life": "Small actions that usually wil not involve any fighting.",
-          "Petty Crimes": "Petty crime, street crime, and youth gangs These crimes are small stuff in the nature of the universe ,but important to the people involved.",
-          "Robberies": "Thefts from people, in which lives may be threatened. Muggings and hostage situations for profit are included in this category.",
-          "Burglaries": "Theft of property in which threatening lives is not a prime factor. Break-ins, thefts, and arson all fall into this general category.",
+          "Petty Crime": "Petty crime, street crime, and youth gangs These crimes are small stuff in the nature of the universe ,but important to the people involved.",
+          "Robbery": "Thefts from people, in which lives may be threatened. Muggings and hostage situations for profit are included in this category.",
+          "Burglary": "Theft of property in which threatening lives is not a prime factor. Break-ins, thefts, and arson all fall into this general category.",
           "Rampage": "Widespread destruction without the motivation of profit. Rampages are often (but not always) the province of powerful villains.",
           "Vendetta": "A grudge match, the superpowered slugfest at its most basic.",
           "Organized Crime": "Can involve any of the lower crimes, with a twist; someone higher up is doing the planning.",
-          "Catastrophes": "Crimes and actions that threaten the well-being of the city and its people: Alien invasions!...Deadly Plagues!...Widespread fires!"
+          "Catastrophe": "Crimes and actions that threaten the well-being of the city and its people: Alien invasions!...Deadly Plagues!...Widespread fires!"
         }
       }
     }
