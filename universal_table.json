@@ -223,7 +223,8 @@
             "Reason": "Couch potato. Good grasp of native language, simple machines",
             "Intuition": "Unaware of surroundings, limited or impaired senses",
             "Psyche": "Easily dominated or programmed",
-            "Resources": "Reduced circumstances, unemployed, on Social Security or allowance"
+            "Resources": "Reduced circumstances, unemployed, on Social Security or allowance",
+            "Material Strength": "Cloth, glass, brush, paper"
           },
           "Encounters": {
             "White": "Rampage",
@@ -251,7 +252,8 @@
             "Reason": "Limited exposure to technology, understands complex machines",
             "Intuition": "A little slow on the uptake TY Normal human levels",
             "Psyche": "Young, untrained, or hampered in sense of will",
-            "Resources": "Freelance, poor credit risk, lower middle class, students"
+            "Resources": "Freelance, poor credit risk, lower middle class, students",
+            "Material Strength": "Normal plastics, crystal, wood"
           },
           "Encounters": {
             "White": "No Encounter",
@@ -279,7 +281,8 @@
             "Reason": "Operate 1980's technology",
             "Intuition": "Above average intuition",
             "Psyche": "Normal human willpower",
-            "Resources": "Salaried employment, middle class"
+            "Resources": "Salaried employment, middle class",
+            "Material Strength": "Rubber, soft metals (gold, brass, copper), ice, adobe, computer chips"
           },
           "Encounters": {
             "White": "No Encounter",
@@ -307,7 +310,8 @@
             "Reason": "Repair and install 1980's technology, comprehend terran languages",
             "Intuition": "Fine eye for detail",
             "Psyche": "Resist ordinary mesmerism",
-            "Resources": "Professional employment, middle class"
+            "Resources": "Professional employment, middle class",
+            "Material Strength": "Brick, aluminum, light machinery pieces, asphalt, high strength plastics"
           },
           "Encounters": {
             "White": "No Encounter",
@@ -335,7 +339,9 @@
             "Reason": "Modify existing 1980's technology",
             "Intuition": "Detective skills or background",
             "Psyche": "Some experience with mental control and/or mystic forces",
-            "Resources": "Small inheritance, small business, upper middle class, Avenger's stipend"
+            "Resources": "Small inheritance, small business, upper middle class, Avenger's stipend",
+            "Material Strength": "Concrete, Beta cloth, iron, bullet-proof glass"
+
           },
           "Encounters": {
             "White": "Daily Life",
@@ -363,7 +369,8 @@
             "Reason": "Understand advanced 1980's technology including computer/circuitry design",
             "Intuition": "Strong empathic sense; gut feeling",
             "Psyche": "Trained in resisting outside will-dominating forces",
-            "Resources": "Large business or chain of businesses, established trust fund, upper class"
+            "Resources": "Large business or chain of businesses, established trust fund, upper class",
+            "Material Strength": "Reinforced concrete, steel"
           },
           "Encounters": {
             "White": "Daily Life",
@@ -391,7 +398,8 @@
             "Reason": "Understand non-terran technologies",
             "Intuition": "In tune with all surroundings, strong hunches in regard to subjects",
             "Psyche": "Highly trained, or possessing great strength of will",
-            "Resources": "Standard corporation, millionaire"
+            "Resources": "Standard corporation, millionaire",
+            "Material Strength": "Solid stone, Vibranium, volcanic rock"
           },
           "Encounters": {
             "White": "Petty Crime",
@@ -419,7 +427,8 @@
             "Reason": "Create leading-edge technologies, such as stardrive or time travel",
             "Intuition": "Senses beyond all normal limitations",
             "Psyche": "Indomitable willpower",
-            "Resources": "Large corporation, small country"
+            "Resources": "Large corporation, small country",
+            "Material Strength": "Osmium steel, granite, gemstones"
           },
           "Encounters": {
             "White": "Rampage",
@@ -447,7 +456,8 @@
             "Reason": "Improve and modify advanced alien technologies",
             "Intuition": "Senses beyond all normal limitations",
             "Psyche": "Intense training in mental powers, experience in wielding those powers",
-            "Resources": "Multi-national corporation, government branch or military of major country, billionaire playboy"
+            "Resources": "Multi-national corporation, government branch or military of major country, billionaire playboy",
+            "Material Strength": "Diamond, super-heavy alloys"
           },
           "Encounters": {
             "White": "Burglary",
@@ -475,7 +485,8 @@
             "Reason": "In effect, IS an alien technology",
             "Intuition": "In touch with universe, cannot be blindsided",
             "Psyche": "A closed mind, practically uncontrollable by outside means",
-            "Resources": "Major country, mega-corporation "
+            "Resources": "Major country, mega-corporation ",
+            "Material Strength": "Adamantium steel, certain mystical and enchanted elements"
           },
           "Encounters": {
             "White": "Organized Crime",
@@ -538,7 +549,8 @@
             "Red": 76
           },
           "Abilities": {
-            "Resources": "Extra-dimensional realm, galactic empire or entity"
+            "Resources": "Extra-dimensional realm, galactic empire or entity",
+            "Material Strength": "Materials of these material strength ranks are virtually indestructible, such as Cap's shield or Thor's hammer"
           }
         },
         "Class 3000": {
@@ -547,9 +559,14 @@
             "Minimum": 3000,
             "Standard": 3000
           },
-          "Green": 2,
-          "Yellow": 31,
-          "Red": 71
+          "Result": {
+            "Green": 2,
+            "Yellow": 31,
+            "Red": 71
+          },
+          "Abilities": {
+            "Material Strength": "Materials of these material strength ranks are virtually indestructible, such as Cap's shield or Thor's hammer"
+          }
         },
         "Class 5000": {
           "Abbreviation": "CL5000",
@@ -557,17 +574,24 @@
             "Minimum": 5000,
             "Standard": 5000
           },
-          "Green": 2,
-          "Yellow": 26,
-          "Red": 66
+          "Result": {
+            "Green": 2,
+            "Yellow": 26,
+            "Red": 66
+          },
+          "Abilities": {
+            "Material Strength": "Materials of these material strength ranks are virtually indestructible, such as Cap's shield or Thor's hammer"
+          }
         },
         "Beyond": {
           "Minimum": 1e100,
           "Standard": 1e100,
           "Abbreviation": "B",
-          "Green": 2,
-          "Yellow": 21,
-          "Red": 61
+          "Result": {
+            "Green": 2,
+            "Yellow": 21,
+            "Red": 61
+          }
         }
       },
       "Effects": {
