@@ -181,18 +181,21 @@
           "Stunning, Lightning bolts": "Incredible",
           "Stunning, High tension wires": "Amazing"
         }
-        
       }
     },
     "Universal Table": {
       "Ranks": {
         "Shift 0": {
-          "Minimum": 0,
-          "Standard": 0,
           "Abbreviation": "Sh0",
-          "Green": 66,
-          "Yellow": 95,
-          "Red": 100,
+          "Number": {
+            "Minimum": 0,
+            "Standard": 0
+          },
+          "Result": {
+            "Green": 66,
+            "Yellow": 95,
+            "Red": 100
+          },
           "Note": "Minimum Column Shift",
           "Encounters": {
             "White": "Rampage",
@@ -202,12 +205,16 @@
           }
         },
         "Feeble": {
-          "Minimum": 1,
-          "Standard": 2,
           "Abbreviation": "Fe",
-          "Green": 61,
-          "Yellow": 91,
-          "Red": 100,
+          "Number": {
+            "Minimum": 1,
+            "Standard": 2
+          },
+          "Result": {
+            "Green": 61,
+            "Yellow": 91,
+            "Red": 100
+          },
           "Abilities": {
             "Fighting": "No training or ability",
             "Agility": "Physically limited",
@@ -215,7 +222,8 @@
             "Endurance": "Reduced or impaired ability",
             "Reason": "Couch potato. Good grasp of native language, simple machines",
             "Intuition": "Unaware of surroundings, limited or impaired senses",
-            "Psyche": "Easily dominated or programmed"
+            "Psyche": "Easily dominated or programmed",
+            "Resources": "Reduced circumstances, unemployed, on Social Security or allowance"
           },
           "Encounters": {
             "White": "Rampage",
@@ -225,12 +233,16 @@
           }
         },
         "Poor": {
-          "Minimum": 3,
-          "Standard": 4,
           "Abbreviation": "Pr",
-          "Green": 56,
-          "Yellow": 86,
-          "Red": 100,
+          "Number": {
+            "Minimum": 3,
+            "Standard": 4
+          },
+          "Result": {
+            "Green": 56,
+            "Yellow": 86,
+            "Red": 100
+          },
           "Abilities": {
             "Fighting": "Normal human ability",
             "Agility": "Clumsy, inaccurate",
@@ -238,7 +250,8 @@
             "Endurance": "Minimal ability or exercise",
             "Reason": "Limited exposure to technology, understands complex machines",
             "Intuition": "A little slow on the uptake TY Normal human levels",
-            "Psyche": "Young, untrained, or hampered in sense of will"
+            "Psyche": "Young, untrained, or hampered in sense of will",
+            "Resources": "Freelance, poor credit risk, lower middle class, students"
           },
           "Encounters": {
             "White": "No Encounter",
@@ -248,12 +261,16 @@
           }
         },
         "Typical": {
-          "Minimum": 5,
-          "Standard": 6,
           "Abbreviation": "Ty",
-          "Green": 51,
-          "Yellow": 81,
-          "Red": 98,
+          "Number": {
+            "Minimum": 5,
+            "Standard": 6
+          },
+          "Result": {
+            "Green": 51,
+            "Yellow": 81,
+            "Red": 98
+          },
           "Abilities": {
             "Fighting": "Minimal training or natural ability",
             "Agility": "Normal human reactions",
@@ -261,7 +278,8 @@
             "Endurance": "Occasionally exercise",
             "Reason": "Operate 1980's technology",
             "Intuition": "Above average intuition",
-            "Psyche": "Normal human willpower"
+            "Psyche": "Normal human willpower",
+            "Resources": "Salaried employment, middle class"
           },
           "Encounters": {
             "White": "No Encounter",
@@ -271,12 +289,16 @@
           }
         },
         "Good": {
-          "Minimum": 8,
-          "Standard": 10,
           "Abbreviation": "Gd",
-          "Green": 46,
-          "Yellow": 76,
-          "Red": 98,
+          "Number": {
+            "Minimum": 8,
+            "Standard": 10
+          },
+          "Result": {
+            "Green": 46,
+            "Yellow": 76,
+            "Red": 98
+          },
           "Abilities": {
             "Fighting": "Some formal training",
             "Agility": "Some training in dexterity and accuracy",
@@ -284,7 +306,8 @@
             "Endurance": "Moderate exercise",
             "Reason": "Repair and install 1980's technology, comprehend terran languages",
             "Intuition": "Fine eye for detail",
-            "Psyche": "Resist ordinary mesmerism"
+            "Psyche": "Resist ordinary mesmerism",
+            "Resources": "Professional employment, middle class"
           },
           "Encounters": {
             "White": "No Encounter",
@@ -294,12 +317,16 @@
           }
         },
         "Excellent": {
-          "Minimum": 16,
-          "Standard": 20,
           "Abbreviation": "Ex",
-          "Green": 41,
-          "Yellow": 71,
-          "Red": 95,
+          "Number": {
+            "Minimum": 16,
+            "Standard": 20
+          },
+          "Result": {
+            "Green": 41,
+            "Yellow": 71,
+            "Red": 95
+          },
           "Abilities": {
             "Fighting": "Regular, formal training",
             "Agility": "Intensive training in dexterity and/or accuracy",
@@ -307,7 +334,8 @@
             "Endurance": "Regular exercise",
             "Reason": "Modify existing 1980's technology",
             "Intuition": "Detective skills or background",
-            "Psyche": "Some experience with mental control and/or mystic forces"
+            "Psyche": "Some experience with mental control and/or mystic forces",
+            "Resources": "Small inheritance, small business, upper middle class, Avenger's stipend"
           },
           "Encounters": {
             "White": "Daily Life",
@@ -317,12 +345,16 @@
           }
         },
         "Remarkable": {
-          "Minimum": 26,
-          "Standard": 30,
           "Abbreviation": "Rm",
-          "Green": 36,
-          "Yellow": 66,
-          "Red": 95,
+          "Number": {
+            "Minimum": 26,
+            "Standard": 30
+          },
+          "Result": {
+            "Green": 36,
+            "Yellow": 66,
+            "Red": 95
+          },
           "Abilities": {
             "Fighting": "Superior talent",
             "Agility": "Olympic athlete",
@@ -330,7 +362,8 @@
             "Endurance": "Intensive exercise",
             "Reason": "Understand advanced 1980's technology including computer/circuitry design",
             "Intuition": "Strong empathic sense; gut feeling",
-            "Psyche": "Trained in resisting outside will-dominating forces"
+            "Psyche": "Trained in resisting outside will-dominating forces",
+            "Resources": "Large business or chain of businesses, established trust fund, upper class"
           },
           "Encounters": {
             "White": "Daily Life",
@@ -340,12 +373,16 @@
           }
         },
         "Incredible": {
-          "Minimum": 37,
-          "Standard": 40,
           "Abbreviation": "In",
-          "Green": 31,
-          "Yellow": 61,
-          "Red": 91,
+          "Number": {
+            "Minimum": 37,
+            "Standard": 40
+          },
+          "Result": {
+            "Green": 31,
+            "Yellow": 61,
+            "Red": 91
+          },
           "Abilities": {
             "Fighting": "Superior talent with training",
             "Agility": "Olympic gymnast",
@@ -353,7 +390,8 @@
             "Endurance": "Enhanced abilities",
             "Reason": "Understand non-terran technologies",
             "Intuition": "In tune with all surroundings, strong hunches in regard to subjects",
-            "Psyche": "Highly trained, or possessing great strength of will"
+            "Psyche": "Highly trained, or possessing great strength of will",
+            "Resources": "Standard corporation, millionaire"
           },
           "Encounters": {
             "White": "Petty Crime",
@@ -363,12 +401,16 @@
           }
         },
         "Amazing": {
-          "Minimum": 46,
-          "Standard": 50,
           "Abbreviation": "Am",
-          "Green": 26,
-          "Yellow": 56,
-          "Red": 91,
+          "Number": {
+            "Minimum": 46,
+            "Standard": 50
+          },
+          "Result": {
+            "Green": 26,
+            "Yellow": 56,
+            "Red": 91
+          },
           "Abilities": {
             "Fighting": "Maximum human potential",
             "Agility": "Super-human accuracy",
@@ -376,7 +418,8 @@
             "Endurance": "Enhanced and trained abilities",
             "Reason": "Create leading-edge technologies, such as stardrive or time travel",
             "Intuition": "Senses beyond all normal limitations",
-            "Psyche": "Indomitable willpower"
+            "Psyche": "Indomitable willpower",
+            "Resources": "Large corporation, small country"
           },
           "Encounters": {
             "White": "Rampage",
@@ -386,12 +429,16 @@
           }
         },
         "Monstrous": {
-          "Minimum": 63,
-          "Standard": 75,
           "Abbreviation": "Mn",
-          "Green": 21,
-          "Yellow": 51,
-          "Red": 86,
+          "Number": {
+            "Minimum": 63,
+            "Standard": 75
+          },
+          "Result": {
+            "Green": 21,
+            "Yellow": 51,
+            "Red": 86
+          },
           "Abilities": {
             "Fighting": "Super-human maximum potential",
             "Agility": "Super-human accuracy and sense of dexterity",
@@ -399,7 +446,8 @@
             "Endurance": "Rarely tires, great fortitude",
             "Reason": "Improve and modify advanced alien technologies",
             "Intuition": "Senses beyond all normal limitations",
-            "Psyche": "Intense training in mental powers, experience in wielding those powers"
+            "Psyche": "Intense training in mental powers, experience in wielding those powers",
+            "Resources": "Multi-national corporation, government branch or military of major country, billionaire playboy"
           },
           "Encounters": {
             "White": "Burglary",
@@ -409,12 +457,16 @@
           }
         },
         "Unearthly": {
-          "Minimum": 88,
-          "Standard": 100,
           "Abbreviation": "Un",
-          "Green": 16,
-          "Yellow": 46,
-          "Red": 86,
+          "Number": {
+            "Minimum": 88,
+            "Standard": 100
+          },
+          "Result": {
+            "Green": 16,
+            "Yellow": 46,
+            "Red": 86
+          },
           "Abilities": {
             "Fighting": "Super-human with intensive training",
             "Agility": "Movement and reactions in a flash, rarely misses",
@@ -422,7 +474,8 @@
             "Endurance": "Never tires",
             "Reason": "In effect, IS an alien technology",
             "Intuition": "In touch with universe, cannot be blindsided",
-            "Psyche": "A closed mind, practically uncontrollable by outside means"
+            "Psyche": "A closed mind, practically uncontrollable by outside means",
+            "Resources": "Major country, mega-corporation "
           },
           "Encounters": {
             "White": "Organized Crime",
@@ -432,12 +485,16 @@
           }
         },
         "Shift X": {
-          "Minimum": 126,
-          "Standard": 150,
           "Abbreviation": "ShX",
-          "Green": 11,
-          "Yellow": 41,
-          "Red": 81,
+          "Number": {
+            "Minimum": 126,
+            "Standard": 150
+          },
+          "Result": {
+            "Green": 11,
+            "Yellow": 41,
+            "Red": 81
+          },
           "Note": "Maximum Encounter Column Shift",
           "Encounters": {
             "White": "No Encounter",
@@ -447,42 +504,59 @@
           }
         },
         "Shift Y": {
-          "Minimum": 176,
-          "Standard": 200,
           "Abbreviation": "ShY",
+          "Number": {
+            "Minimum": 176,
+            "Standard": 200
+          },
           "Green": 7,
           "Yellow": 41,
           "Red": 81
         },
         "Shift Z": {
-          "Minimum": 351,
-          "Standard": 500,
           "Abbreviation": "ShZ",
-          "Green": 4,
-          "Yellow": 36,
-          "Red": 76,
+          "Number": {
+            "Minimum": 351,
+            "Standard": 500
+          },
+          "Result": {
+            "Green": 4,
+            "Yellow": 36,
+            "Red": 76
+          },
           "Note": "Maximum Column Shift"
         },
         "Class 1000": {
-          "Minimum": 1000,
-          "Standard": 1000,
           "Abbreviation": "CL1000",
-          "Green": 2,
-          "Yellow": 36,
-          "Red": 76
+          "Number": {
+            "Minimum": 1000,
+            "Standard": 1000
+          },
+          "Result": {
+            "Green": 2,
+            "Yellow": 36,
+            "Red": 76
+          },
+          "Abilities": {
+            "Resources": "Extra-dimensional realm, galactic empire or entity"
+          }
         },
         "Class 3000": {
-          "Minimum": 3000,
-          "Standard": 3000,
           "Abbreviation": "CL3000",
+          "Number": {
+            "Minimum": 3000,
+            "Standard": 3000
+          },
           "Green": 2,
           "Yellow": 31,
           "Red": 71
         },
         "Class 5000": {
-          "Minimum": 5000,
-          "Standard": 5000,
           "Abbreviation": "CL5000",
+          "Number": {
+            "Minimum": 5000,
+            "Standard": 5000
+          },
           "Green": 2,
           "Yellow": 26,
           "Red": 66
