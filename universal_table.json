@@ -250,7 +250,7 @@
             "Strength": "Able to press up to 100 lbs.",
             "Endurance": "Minimal ability or exercise",
             "Reason": "Limited exposure to technology, understands complex machines",
-            "Intuition": "A little slow on the uptake TY Normal human levels",
+            "Intuition": "A little slow on the uptake",
             "Psyche": "Young, untrained, or hampered in sense of will",
             "Resources": "Freelance, poor credit risk, lower middle class, students"
           },
@@ -279,7 +279,7 @@
             "Strength": "Able to press up to 200 lbs.",
             "Endurance": "Occasionally exercise",
             "Reason": "Operate 1980's technology",
-            "Intuition": "Above average intuition",
+            "Intuition": "Normal human levels",
             "Psyche": "Normal human willpower",
             "Resources": "Salaried employment, middle class"
           },
@@ -308,7 +308,7 @@
             "Strength": "Able to press up to 400 lbs.",
             "Endurance": "Moderate exercise",
             "Reason": "Repair and install 1980's technology, comprehend terran languages",
-            "Intuition": "Fine eye for detail",
+            "Intuition": "Above average intuition",
             "Psyche": "Resist ordinary mesmerism",
             "Resources": "Professional employment, middle class"
           },
@@ -337,7 +337,7 @@
             "Strength": "Able to press up to 800 lbs. (Maximum human ability)",
             "Endurance": "Regular exercise",
             "Reason": "Modify existing 1980's technology",
-            "Intuition": "Detective skills or background",
+            "Intuition": "Fine eye for detail",
             "Psyche": "Some experience with mental control and/or mystic forces",
             "Resources": "Small inheritance, small business, upper middle class, Avenger's stipend",
             "Material Strength": "Concrete, Beta cloth, iron, bullet-proof glass"
@@ -366,7 +366,7 @@
             "Strength": "Able to press up to 2000 lbs (1 ton)",
             "Endurance": "Intensive exercise",
             "Reason": "Understand advanced 1980's technology including computer/circuitry design",
-            "Intuition": "Strong empathic sense; gut feeling",
+            "Intuition": "Detective skills or background",
             "Psyche": "Trained in resisting outside will-dominating forces",
             "Resources": "Large business or chain of businesses, established trust fund, upper class"
           },
@@ -395,7 +395,7 @@
             "Strength": "Able to press up to 10 tons",
             "Endurance": "Enhanced abilities",
             "Reason": "Understand non-terran technologies",
-            "Intuition": "In tune with all surroundings, strong hunches in regard to subjects",
+            "Intuition": "Strong empathic sense; gut feeling",
             "Psyche": "Highly trained, or possessing great strength of will",
             "Resources": "Standard corporation, millionaire"
           },
@@ -424,7 +424,7 @@
             "Strength": "Able to press up to 50 tons",
             "Endurance": "Enhanced and trained abilities",
             "Reason": "Create leading-edge technologies, such as stardrive or time travel",
-            "Intuition": "Senses beyond all normal limitations",
+            "Intuition": "In tune with all surroundings, strong hunches in regard to subjects",
             "Psyche": "Indomitable willpower",
             "Resources": "Large corporation, small country"
           },
