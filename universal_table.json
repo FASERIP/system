@@ -339,9 +339,9 @@
             "Reason": "Modify existing 1980's technology",
             "Intuition": "Fine eye for detail",
             "Psyche": "Some experience with mental control and/or mystic forces",
-            "Resources": "Small inheritance, small business, upper middle class, Avenger's stipend",
-            "Material Strength": "Concrete, Beta cloth, iron, bullet-proof glass"
+            "Resources": "Small inheritance, small business, upper middle class, Avenger's stipend"
           },
+          "Material Strength": "Concrete, Beta cloth, iron, bullet-proof glass",
           "Encounters": {
             "White": "Daily Life",
             "Green": "No Encounter",
